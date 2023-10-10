@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9fc; /* Color de fondo suave */
+  color: #333;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #e0e6ed;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.App-header {
+  background-color: #ffffff;
+  color: #2c3e50;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+body {
+  background-color: #e6ebf1; /* Un color de fondo general fuera del área principal de la aplicación */
+}
+.profile-pic {
+  width: 150px;  /* O el tamaño que prefieras */
+  height: 150px;
+  border-radius: 50%;  /* Esto hará que la imagen sea redonda */
+  margin-right: 20px;  /* Espacio entre la imagen y el texto */
+  float: left;  /* Alinea la imagen a la izquierda */
+}

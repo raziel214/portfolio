@@ -1,0 +1,35 @@
+.Cinte experience-detail-container {
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.Cinte experience-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Cinte experience-description {
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.Cinte experience-dates {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.Cinte experience-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.Cinte experience-link:hover {
+    text-decoration: underline;
+}
