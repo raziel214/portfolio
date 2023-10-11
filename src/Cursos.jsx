@@ -40,6 +40,12 @@ function Cursos(){
                 <p><strong>@soulreavers214</strong></p>
             </div>
 
+            <div className="course-entry">
+                <h4>Información de Contacto</h4>
+                <h4>Email: 94041671@u.icesi.edu.co</h4>
+                <p><strong>Telefono: +573004756201</strong></p>
+            </div>
+
 
         </div>
 

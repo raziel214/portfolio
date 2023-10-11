@@ -15,23 +15,23 @@ function WorkExperience() {
                 {/* ... Otros componentes ... */}
                 <div className="work-experience-container">
                     <div className="experience-column">
-                        <Link to="/exsis-digital-experience">CONSULTOR SENIOR - EXSIS DIGITAL</Link>
+                        <Link to="/exsis-digital-experience">EXSIS DIGITAL</Link>
                         {/* Otros títulos con sus respectivos enlaces */}
                     </div>
                     <div className="experience-column">
-                        <Link to="/coomeva-medicina-prepagada">COORDINADOR DE DESARROLLO DE SOFTWARE- COOMEVA MEDICINA PREPAGADA</Link>
+                        <Link to="/coomeva-medicina-prepagada">COOMEVA MEDICINA PREPAGADA</Link>
                         {/* Títulos y enlaces para la segunda columna */}
                     </div>
                     <div className="experience-column">
-                        <Link to="/cinte-experience">FULL STACK DEVELOPER - CINTE</Link>
+                        <Link to="/cinte-experience">CINTE</Link>
                         {/* Títulos y enlaces para la segunda columna */}
                     </div>
                     <div className="experience-column">
-                        <Link to="/novatec-experience">ARQITECTO DE SOFTWARE- NOVATEC</Link>
+                        <Link to="/novatec-experience">NOVATEC</Link>
                         {/* Títulos y enlaces para la segunda columna */}
                     </div>
                     <div className="experience-column">
-                        <Link to="/taylor-experience">DESARROLLADOR DE SOFTWARE- JOHNSON AND TAYLOR</Link>
+                        <Link to="/taylor-experience">JOHNSON AND TAYLOR</Link>
                         {/* Títulos y enlaces para la segunda columna */}
                     </div>
                     <div className="experience-column">
