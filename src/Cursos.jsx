@@ -19,7 +19,7 @@ function Cursos(){
             <h2>{t('courseTitle')}</h2>
             <div className="course-entry">
                 <h4>{t('courseDescription')}</h4>
-                <p><strong>Platzi</strong></p>
+                <p><strong>Capacitaciones Virtuales</strong></p>
                 <p>{t('course2Description')}</p>
                 <p><strong>https://platzi.com/p/johnfredyquimbayaorozco/</strong></p>
             </div>
