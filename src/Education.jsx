@@ -1,32 +1,35 @@
 import React from 'react';
 import './CSS/Education.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import {useTranslation} from "react-i18next";
 
 function Education() {
+    const { t } = useTranslation();
     return (
         <div className="education-section">
-            <h2>Formación Académica</h2>
+            <h2>{t('')}</h2>
             <div className="education-columns">
                 <div className="education-column">
                     <div className="education-entry">
-                        <h3>Ingeniería de Sistemas</h3>
-                        <p><strong>Universidad Cooperativa de Colombia - Fecha: 09-12-2016</strong></p>
+                        <h3>{t('education1Title')}</h3>
+                        <p><strong>{t('education1Date')}</strong></p>
                     </div>
 
                     <div className="education-entry">
-                        <h3>Especialización en Ingeniería de Software</h3>
-                        <p><strong>Universidad Javeriana Cali - Fecha: 12-09-2022</strong></p>
+                        <h3>{t('education2Title')}</h3>
+                        <p><strong>{t('education2Date')}</strong></p>
                     </div>
                 </div>
 
                 <div className="education-column">
                     <div className="education-entry">
-                        <h3>Maestría en Ingeniería de Software</h3>
-                        <p><strong>Universidad Javeriana Cali - Trabajo de grado</strong></p>
+                        <h3>{t('education3Title')}</h3>
+                        <p><strong>{t('education3Date')}</strong></p>
                     </div>
 
                     <div className="education-entry">
-                        <h3>Maestría Gerencia en Tecnologías de la Información</h3>
-                        <p><strong>Universidad Icesi - Trabajo de grado</strong></p>
+                        <h3>{t('education4Title')}</h3>
+                        <p><strong>{t('education4Date')}</strong></p>
                     </div>
                 </div>
             </div>

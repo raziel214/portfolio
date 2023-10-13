@@ -39,3 +39,13 @@
 .education-column {
     width: 48%;  /* Dejar un pequeño espacio entre las dos columnas */
 }
+
+@media (max-width: 768px) {
+    .education-columns {
+        flex-direction: column;
+    }
+
+    .education-column {
+        width: 100%;
+    }
+}

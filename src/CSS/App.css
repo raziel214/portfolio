@@ -45,3 +45,29 @@ body {
   margin-right: 20px;  /* Espacio entre la imagen y el texto */
   float: left;  /* Alinea la imagen a la izquierda */
 }
+.language-btn-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.language-btn {
+  background-color: #4c90af;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+
+.language-btn:hover {
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
