@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c0c2cc60.css",
-    "main.js": "/portfolio/static/js/main.49b948c9.js",
+    "main.js": "/portfolio/static/js/main.048a2116.js",
     "static/js/496.982cc2b7.chunk.js": "/portfolio/static/js/496.982cc2b7.chunk.js",
     "static/media/D8BBF075A001.png": "/portfolio/static/media/D8BBF075A001.6d9e7cf3ea2af355e053.png",
     "static/media/image003.jpg": "/portfolio/static/media/image003.1a0024c6d9beb1efdd1c.jpg",
     "static/media/aws-knowledge-migration-foundations.png": "/portfolio/static/media/aws-knowledge-migration-foundations.7663f659eca82b2eea4d.png",
+    "static/media/aws-partner-cloud-economics-accreditation.png": "/portfolio/static/media/aws-partner-cloud-economics-accreditation.e02516075662e938b0be.png",
     "static/media/aws-partner-accreditation-technical.png": "/portfolio/static/media/aws-partner-accreditation-technical.d23cc1493cbca8c687af.png",
     "static/media/aws-knowledge-architecting.png": "/portfolio/static/media/aws-knowledge-architecting.78c1aef6fac848eb6d10.png",
     "index.html": "/portfolio/index.html",
     "main.c0c2cc60.css.map": "/portfolio/static/css/main.c0c2cc60.css.map",
-    "main.49b948c9.js.map": "/portfolio/static/js/main.49b948c9.js.map",
+    "main.048a2116.js.map": "/portfolio/static/js/main.048a2116.js.map",
     "496.982cc2b7.chunk.js.map": "/portfolio/static/js/496.982cc2b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c0c2cc60.css",
-    "static/js/main.49b948c9.js"
+    "static/js/main.048a2116.js"
   ]
 }
