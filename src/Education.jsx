@@ -1,6 +1,5 @@
 import React from 'react';
 import './CSS/Education.css';
-import { BrowserRouter as Router } from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 
 function Education() {
