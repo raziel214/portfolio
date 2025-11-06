@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c0c2cc60.css",
-    "main.js": "/portfolio/static/js/main.323b4649.js",
-    "static/js/496.982cc2b7.chunk.js": "/portfolio/static/js/496.982cc2b7.chunk.js",
-    "static/media/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.png": "/portfolio/static/media/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.be0bb9ce89ec55af385f.png",
-    "static/media/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.png": "/portfolio/static/media/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.eaa76e659a771e4f47bf.png",
-    "static/media/KJbv0GOIxc4Ze8p7LH1Ke4TeOMBGPqAus29iGiFw5po=.png": "/portfolio/static/media/KJbv0GOIxc4Ze8p7LH1Ke4TeOMBGPqAus29iGiFw5po=.465b97041e6cb75f6762.png",
-    "static/media/D8BBF075A001.png": "/portfolio/static/media/D8BBF075A001.6d9e7cf3ea2af355e053.png",
-    "static/media/teuTnmFi96VycJaZff9bmOfUQMz1tgPiTtsCH2iBBY8=.png": "/portfolio/static/media/teuTnmFi96VycJaZff9bmOfUQMz1tgPiTtsCH2iBBY8=.b9355ba6c0dc1665798c.png",
+    "main.css": "/portfolio/static/css/main.3e341a2f.css",
+    "main.js": "/portfolio/static/js/main.01c1ae2e.js",
+    "static/js/496.b307acad.chunk.js": "/portfolio/static/js/496.b307acad.chunk.js",
+    "static/media/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.png": "/portfolio/static/media/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.be0bb9ce89ec55af385f.be0bb9ce89ec55af385f.png",
+    "static/media/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.png": "/portfolio/static/media/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.eaa76e659a771e4f47bf.eaa76e659a771e4f47bf.png",
+    "static/media/KJbv0GOIxc4Ze8p7LH1Ke4TeOMBGPqAus29iGiFw5po=.png": "/portfolio/static/media/KJbv0GOIxc4Ze8p7LH1Ke4TeOMBGPqAus29iGiFw5po=.465b97041e6cb75f6762.465b97041e6cb75f6762.png",
+    "static/media/D8BBF075A001.png": "/portfolio/static/media/D8BBF075A001.6d9e7cf3ea2af355e053.6d9e7cf3ea2af355e053.png",
+    "static/media/teuTnmFi96VycJaZff9bmOfUQMz1tgPiTtsCH2iBBY8=.png": "/portfolio/static/media/teuTnmFi96VycJaZff9bmOfUQMz1tgPiTtsCH2iBBY8=.b9355ba6c0dc1665798c.b9355ba6c0dc1665798c.png",
     "static/media/image003.jpg": "/portfolio/static/media/image003.1a0024c6d9beb1efdd1c.jpg",
-    "static/media/aws-knowledge-migration-foundations.png": "/portfolio/static/media/aws-knowledge-migration-foundations.7663f659eca82b2eea4d.png",
-    "static/media/aws-partner-cloud-economics-accreditation.png": "/portfolio/static/media/aws-partner-cloud-economics-accreditation.e02516075662e938b0be.png",
-    "static/media/aws-partner-accreditation-technical.png": "/portfolio/static/media/aws-partner-accreditation-technical.d23cc1493cbca8c687af.png",
-    "static/media/aws-knowledge-architecting.png": "/portfolio/static/media/aws-knowledge-architecting.78c1aef6fac848eb6d10.png",
+    "static/media/aws-knowledge-migration-foundations.png": "/portfolio/static/media/aws-knowledge-migration-foundations.7663f659eca82b2eea4d.7663f659eca82b2eea4d.png",
+    "static/media/aws-educate-getting-started-with-storage-training-b.png": "/portfolio/static/media/aws-educate-getting-started-with-storage-training-b.ed348d9b8b172aa6953d.png",
+    "static/media/aws-partner-cloud-economics-accreditation.png": "/portfolio/static/media/aws-partner-cloud-economics-accreditation.e02516075662e938b0be.e02516075662e938b0be.png",
+    "static/media/aws-partner-accreditation-technical.png": "/portfolio/static/media/aws-partner-accreditation-technical.d23cc1493cbca8c687af.d23cc1493cbca8c687af.png",
+    "static/media/aws-knowledge-architecting.png": "/portfolio/static/media/aws-knowledge-architecting.78c1aef6fac848eb6d10.78c1aef6fac848eb6d10.png",
     "index.html": "/portfolio/index.html",
-    "main.c0c2cc60.css.map": "/portfolio/static/css/main.c0c2cc60.css.map",
-    "main.323b4649.js.map": "/portfolio/static/js/main.323b4649.js.map",
-    "496.982cc2b7.chunk.js.map": "/portfolio/static/js/496.982cc2b7.chunk.js.map"
+    "main.3e341a2f.css.map": "/portfolio/static/css/main.3e341a2f.css.map",
+    "main.01c1ae2e.js.map": "/portfolio/static/js/main.01c1ae2e.js.map",
+    "496.b307acad.chunk.js.map": "/portfolio/static/js/496.b307acad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0c2cc60.css",
-    "static/js/main.323b4649.js"
+    "static/css/main.3e341a2f.css",
+    "static/js/main.01c1ae2e.js"
   ]
 }
