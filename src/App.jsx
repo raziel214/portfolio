@@ -34,7 +34,7 @@ function App() {
                     <Route path="/" element={
                         <>
                             <header className="App-header">
-                                <img src={profilePic} alt={t('profileAltText')} className="profile-pic" />
+                                <img src={profilePic} alt={t('profileAltText')} className="profile-pic" loading="lazy" />
                                 <h1>{t('nameProfile')}</h1>
                                 <p>{t('titleProfile')}</p>
                                 <p>{t('descriptionProfile')}</p>

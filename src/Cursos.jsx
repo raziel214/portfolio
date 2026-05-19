@@ -35,31 +35,31 @@ function Cursos(){
 
                 <div style={{display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '20px', justifyContent: 'center'}}>
                     <a href="https://wallet.xertify.co/certificates/D8BBF075A001?r=1" target="_blank" rel="noopener noreferrer">
-                        <img src={scrumBadge} alt="Scrum Master Badge" style={{width: '150px', height: 'auto'}} />
+                        <img src={scrumBadge} alt="Scrum Master certification badge by Certiprof" loading="lazy" style={{width: '150px', height: 'auto'}} />
                     </a>
                     <a href="https://www.credly.com/badges/196bb308-027e-4786-8903-f439ebdf8992/public_url" target="_blank" rel="noopener noreferrer">
-                        <img src={awsStorage} alt="AWS Storage Badge" style={{width: '150px', height: 'auto'}} />
+                        <img src={awsStorage} alt="AWS Educate — Getting Started with Storage badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
                     </a>
                     <a href="https://www.credly.com/badges/3f44eeb9-c020-4982-ab34-f4eed45ca47f/public_url" target="_blank" rel="noopener noreferrer">
-                        <img src={awsArchitecting} alt="AWS Architecting Badge" style={{width: '150px', height: 'auto'}} />
+                        <img src={awsArchitecting} alt="AWS Knowledge: Architecting badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
                     </a>
                     <a href="https://www.credly.com/badges/aa143d8b-f2d4-4434-b107-890ed5c864e0/linked_in_profile" target="_blank" rel="noopener noreferrer">
-                        <img src={awsMigration} alt="AWS Migration Badge" style={{width: '150px', height: 'auto'}} />
+                        <img src={awsMigration} alt="AWS Knowledge: Migration Foundations badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
                     </a>
                     <a href="https://www.credly.com/badges/c541e06b-e09f-4b06-a5df-50ba49aa1943/linked_in_profile" target="_blank" rel="noopener noreferrer">
-                        <img src={awsTechnical} alt="AWS Technical Badge" style={{width: '150px', height: 'auto'}} />
+                        <img src={awsTechnical} alt="AWS Partner: Technical Accreditation badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
                     </a>
                     <a href="https://www.credly.com/badges/a7814bd9-f8cc-4e55-a9cd-7e0e418c72bf/public_url" target="_blank" rel="noopener noreferrer">
-                        <img src={awsEconomics} alt="AWS Economics Badge" style={{width: '150px', height: 'auto'}} />
+                        <img src={awsEconomics} alt="AWS Partner: Cloud Economics Accreditation badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
                     </a>
                     <a href="https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9600356" target="_blank" rel="noopener noreferrer">
-                        <img src={googleBadge1} alt="Google Badge 1" style={{width: '150px', height: 'auto'}} />
+                        <img src={googleBadge1} alt="Google Cloud Skills Boost badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
                     </a>
                     <a href="https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9599977" target="_blank" rel="noopener noreferrer">
-                        <img src={googleBadge2} alt="Google Badge 2" style={{width: '150px', height: 'auto'}} />
+                        <img src={googleBadge2} alt="Google Cloud Skills Boost badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
                     </a>
                     <a href="https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9437985" target="_blank" rel="noopener noreferrer">
-                        <img src={googleBadge3} alt="Google Badge 3" style={{width: '150px', height: 'auto'}} />
+                        <img src={googleBadge3} alt="Google Cloud Skills Boost badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
                     </a>
                 </div>
             </div>
@@ -67,18 +67,41 @@ function Cursos(){
             <h2>{t('courseInformationSocial')}</h2>
             <div className="course-entry">
                 <h4>{t('linkedin')}</h4>
-                <p><strong>https://www.linkedin.com/in/jfqo/</strong></p>
+                <p>
+                    <strong>
+                        <a href="https://www.linkedin.com/in/jfqo/" target="_blank" rel="noopener noreferrer">
+                            https://www.linkedin.com/in/jfqo/
+                        </a>
+                    </strong>
+                </p>
             </div>
 
             <div className="course-entry">
                 <h4>{t('twitter')}</h4>
-                <p><strong>@soulreavers214</strong></p>
+                <p>
+                    <strong>
+                        <a href="https://x.com/soulreavers214" target="_blank" rel="noopener noreferrer">
+                            @soulreavers214
+                        </a>
+                    </strong>
+                </p>
             </div>
 
             <div className="course-entry">
                 <h2>{t('courseInformationContac')}</h2>
-                <h4>{t('email')}: 94041671@u.icesi.edu.co</h4>
-                <p><strong>{t('phone')}: +573004756201</strong></p>
+                {/* TODO: reemplazar el email universitario por uno profesional propio antes de publicar. */}
+                <h4>
+                    {t('email')}:{' '}
+                    <a href="mailto:94041671@u.icesi.edu.co">
+                        94041671@u.icesi.edu.co
+                    </a>
+                </h4>
+                <p>
+                    <strong>
+                        {t('phone')}:{' '}
+                        <a href="tel:+573004756201">+57 300 475 6201</a>
+                    </strong>
+                </p>
             </div>
 
 

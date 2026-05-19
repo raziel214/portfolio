@@ -72,3 +72,8 @@ out/
 # Temporary folders
 tmp/
 temp/
+
+# Internal planning / agent context (not for public repo)
+.claude/
+REFACTOR_PORTFOLIO.md
+INVENTORY.md
