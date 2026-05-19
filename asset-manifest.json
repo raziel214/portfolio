@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cda4fb1e.css",
-    "main.js": "/portfolio/static/js/main.76466489.js",
+    "main.css": "/portfolio/static/css/main.3e34b66b.css",
+    "main.js": "/portfolio/static/js/main.a0802d4e.js",
     "static/js/496.b307acad.chunk.js": "/portfolio/static/js/496.b307acad.chunk.js",
     "static/media/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.png": "/portfolio/static/media/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.be0bb9ce89ec55af385f.be0bb9ce89ec55af385f.png",
     "static/media/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.png": "/portfolio/static/media/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.eaa76e659a771e4f47bf.eaa76e659a771e4f47bf.png",
@@ -14,12 +14,12 @@
     "static/media/aws-partner-accreditation-technical.png": "/portfolio/static/media/aws-partner-accreditation-technical.d23cc1493cbca8c687af.d23cc1493cbca8c687af.png",
     "static/media/aws-knowledge-architecting.png": "/portfolio/static/media/aws-knowledge-architecting.78c1aef6fac848eb6d10.78c1aef6fac848eb6d10.png",
     "index.html": "/portfolio/index.html",
-    "main.cda4fb1e.css.map": "/portfolio/static/css/main.cda4fb1e.css.map",
-    "main.76466489.js.map": "/portfolio/static/js/main.76466489.js.map",
+    "main.3e34b66b.css.map": "/portfolio/static/css/main.3e34b66b.css.map",
+    "main.a0802d4e.js.map": "/portfolio/static/js/main.a0802d4e.js.map",
     "496.b307acad.chunk.js.map": "/portfolio/static/js/496.b307acad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cda4fb1e.css",
-    "static/js/main.76466489.js"
+    "static/css/main.3e34b66b.css",
+    "static/js/main.a0802d4e.js"
   ]
 }
