@@ -10,6 +10,9 @@ function WorkExperience() {
             <h2>{t('workExperienceTitle')}</h2>
             <div className="work-experience-container">
                 <div className="experience-column">
+                    <Link to="/ucc-experience">UNIVERSIDAD COOPERATIVA DE COLOMBIA</Link>
+                </div>
+                <div className="experience-column">
                     <Link to="/seti-experience">SETI (BANCOLOMBIA)</Link>
                 </div>
                 <div className="experience-column">
@@ -29,6 +32,9 @@ function WorkExperience() {
                 </div>
                 <div className="experience-column">
                     <Link to="/taylor-experience">JOHNSON AND TAYLOR</Link>
+                </div>
+                <div className="experience-column">
+                    <Link to="/unicuces-experience">UNICUCES</Link>
                 </div>
                 <div className="experience-column">
                     <Link to="/freelance-experience">{t('workExperience')}</Link>

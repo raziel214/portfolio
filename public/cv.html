@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Fredy Quimbaya Orozco — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #f3f4f6;
+    padding: 24px 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 12mm 14mm;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+  }
+
+  /* SCREEN-ONLY TOOLBAR */
+  .toolbar {
+    max-width: 210mm;
+    margin: 0 auto 16px;
+    padding: 0 14mm;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .toolbar button {
+    background: hsl(187, 74%, 32%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .toolbar button:hover { background: hsl(187, 74%, 26%); }
+  .toolbar button.secondary {
+    background: transparent;
+    color: hsl(187, 74%, 32%);
+    border: 1.5px solid hsl(187, 74%, 32%);
+  }
+  .toolbar button.secondary:hover { background: hsl(187, 40%, 95%); }
+
+  /* HEADER */
+  .header { margin-bottom: 18px; }
+  .header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; color: #1a1a2e; letter-spacing: -0.02em; margin-bottom: 4px; line-height: 1.1; }
+  .header-subtitle { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; color: hsl(270, 70%, 45%); margin-bottom: 8px; }
+  .header-gradient { height: 2px; background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%)); border-radius: 1px; margin-bottom: 10px; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 6px 12px; font-family: 'DM Sans', sans-serif; font-size: 10.5px; line-height: 1.4; color: #555; }
+  .contact-row a { color: #555; text-decoration: none; }
+  .contact-row a:hover { text-decoration: underline; }
+  .contact-row .separator { color: #ccc; }
+
+  /* SECTIONS */
+  .section { margin-bottom: 16px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: hsl(187, 74%, 32%); border-bottom: 1.5px solid #e2e2e2; padding-bottom: 4px; margin-bottom: 10px; line-height: 1.2; }
+
+  /* SUMMARY */
+  .summary-text { font-size: 11px; line-height: 1.65; color: #2f2f2f; }
+
+  /* COMPETENCIES */
+  .competencies-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+  .competency-tag { font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 500; color: hsl(187, 74%, 28%); background: hsl(187, 40%, 95%); padding: 4px 10px; border-radius: 3px; border: 1px solid hsl(187, 40%, 88%); }
+
+  /* WORK EXPERIENCE */
+  .job { margin-bottom: 12px; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 2px; }
+  .job-company { font-family: 'Space Grotesk', sans-serif; font-size: 12.5px; font-weight: 600; color: hsl(270, 70%, 45%); }
+  .job-period { font-size: 10.5px; color: #777; white-space: nowrap; }
+  .job-role { font-size: 11px; font-weight: 600; color: #333; margin-bottom: 4px; }
+  .job ul { list-style: none; padding-left: 0; margin-top: 4px; }
+  .job li { font-size: 10.5px; line-height: 1.55; color: #333; margin-bottom: 3px; padding-left: 12px; position: relative; }
+  .job li::before { content: "·"; position: absolute; left: 2px; color: hsl(270, 70%, 45%); font-weight: 700; }
+  .job li strong { font-weight: 600; }
+
+  /* EDUCATION */
+  .edu-item { margin-bottom: 6px; }
+  .edu-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .edu-title { font-weight: 600; font-size: 11px; color: #333; }
+  .edu-org { color: hsl(270, 70%, 45%); font-weight: 500; }
+  .edu-year { font-size: 10px; color: #777; white-space: nowrap; }
+
+  /* CERTIFICATIONS */
+  .cert-item { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 4px; }
+  .cert-title { font-size: 10.5px; font-weight: 500; color: #333; }
+  .cert-org { color: hsl(270, 70%, 45%); }
+  .cert-year { font-size: 10px; color: #777; white-space: nowrap; }
+
+  /* SKILLS */
+  .skills-grid { display: flex; flex-direction: column; gap: 4px; }
+  .skill-row { font-size: 10.5px; color: #444; }
+  .skill-row strong { color: #333; font-weight: 600; }
+
+  /* PRINT */
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; border-radius: 0; padding: 12mm 14mm; max-width: 100%; }
+    .toolbar { display: none !important; }
+    a { color: inherit !important; text-decoration: none !important; }
+  }
+
+  /* PAGE BREAK CONTROL */
+  .avoid-break, .job, .edu-item, .cert-item { break-inside: avoid; page-break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button type="button" class="secondary" onclick="window.close()">Cerrar</button>
+  <button type="button" onclick="window.print()">Guardar como PDF</button>
+</div>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header avoid-break">
+    <h1>John Fredy Quimbaya Orozco</h1>
+    <div class="header-subtitle">Architect Sr · Software Architect · Solutions Architect</div>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <a href="tel:+573004756201">+57 300 475 6201</a>
+      <span class="separator">|</span>
+      <a href="mailto:94041671@u.icesi.edu.co">94041671@u.icesi.edu.co</a>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/jfqo" target="_blank" rel="noopener noreferrer">linkedin.com/in/jfqo</a>
+      <span class="separator">|</span>
+      <a href="https://raziel214.github.io/portfolio/" target="_blank" rel="noopener noreferrer">raziel214.github.io/portfolio</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/raziel214" target="_blank" rel="noopener noreferrer">github.com/raziel214</a>
+      <span class="separator">|</span>
+      <span>Cali, Colombia · Trabajo remoto</span>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section avoid-break">
+    <div class="section-title">Resumen Profesional</div>
+    <div class="summary-text">
+      Arquitecto de software con <strong>9+ años</strong> en sectores financiero y de salud. Lideré la arquitectura de agentes de IA Generativa Pro-code y Low-code en <strong>Bancolombia</strong> bajo <strong>Modelo C4</strong>. Especialista en <strong>microservicios</strong>, <strong>arquitecturas limpias</strong> y <strong>SOLID</strong> sobre <strong>AWS</strong>, con dominio profundo de <strong>Java / Spring Boot</strong>, <strong>Python / FastAPI</strong> y <strong>C# / .NET Core</strong>. He liderado evoluciones a microservicios y la migración de <strong>API Gateway</strong> (IBM API Connect → Gravitee). Magíster en Gerencia de Tecnologías de Información (Icesi) y Maestría en Ingeniería de Software (Javeriana, en curso).
+    </div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section">
+    <div class="section-title">Competencias Core</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Arquitectura de Microservicios</span>
+      <span class="competency-tag">Domain-Driven Design (DDD)</span>
+      <span class="competency-tag">AWS Cloud</span>
+      <span class="competency-tag">Java / Spring Boot</span>
+      <span class="competency-tag">Python / FastAPI</span>
+      <span class="competency-tag">C# / .NET Core</span>
+      <span class="competency-tag">API Gateway · Gravitee</span>
+      <span class="competency-tag">CI/CD · DevOps</span>
+      <span class="competency-tag">Clean Architecture · SOLID</span>
+      <span class="competency-tag">IA Generativa · Agentes</span>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experiencia Laboral</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-company">SETI · Cliente: Bancolombia</div>
+        <div class="job-period">Agosto 2025 – Abril 2026</div>
+      </div>
+      <div class="job-role">AI Software Architect — Generative AI &amp; Cloud Solutions</div>
+      <ul>
+        <li>Diseñé la <strong>arquitectura de agentes Pro-code y Low-code</strong> para casos de uso críticos en banca, bajo <strong>Modelo C4</strong> (Contexto, Contenedores, Despliegue), garantizando escalabilidad de IA Generativa a nivel organizacional.</li>
+        <li>Microservicios de alto rendimiento en <strong>Java / Spring Boot</strong> y <strong>Python / FastAPI</strong> sobre <strong>AWS</strong>, con seguridad avanzada vía <strong>Spring Security (OAuth2/OIDC)</strong> para cumplimiento normativo bancario.</li>
+        <li>Orquestación de soluciones de IA sobre AWS integrando computación, almacenamiento y modelos fundacionales para alta disponibilidad y baja latencia.</li>
+        <li>Liderazgo de PoCs sobre modelos emergentes y gobernanza técnica para garantizar modularidad y mantenibilidad de los agentes.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-company">Universidad Cooperativa de Colombia</div>
+        <div class="job-period">Febrero 2025 – Actualidad</div>
+      </div>
+      <div class="job-role">Docente catedrático — IA, Algoritmia y Pensamiento Sistémico</div>
+      <ul>
+        <li>Cátedras de Pensamiento Sistémico, Algoritmia e Inteligencia Artificial. Estructuro contenidos integrando teoría y práctica para fortalecer el pensamiento crítico y la resolución de problemas en los estudiantes.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-company">Koralat</div>
+        <div class="job-period">Febrero 2024 – Diciembre 2025</div>
+      </div>
+      <div class="job-role">Arquitecto de Soluciones</div>
+      <ul>
+        <li>Lideré la <strong>evolución del Core a una arquitectura de microservicios</strong> en colaboración con Cobis Topaz, aplicando <strong>arquitecturas limpias y desacopladas</strong> sobre stack <strong>C# / .NET Core</strong>.</li>
+        <li>Migración de <strong>IBM API Connect → Gravitee API Manager</strong> para optimizar gestión de tráfico, observabilidad y costo del <strong>API Gateway</strong>.</li>
+        <li>Implementación de estrategias <strong>CI/CD con Jenkins y AWS</strong>, reduciendo significativamente el time-to-market y aumentando la confiabilidad de los despliegues.</li>
+        <li>Gestión integral del <strong>SDLC</strong> y supervisión de todas las fases del ciclo de vida del software, con foco en seguridad, alta disponibilidad y escalabilidad.</li>
+        <li>Negociación técnica y económica de servicios <strong>AWS</strong>, logrando equilibrio costo-beneficio óptimo. Coordinación de squads multidisciplinarios bajo metodologías ágiles.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-company">Exis Digital</div>
+        <div class="job-period">Septiembre 2022 – Octubre 2023</div>
+      </div>
+      <div class="job-role">Consultor Senior</div>
+      <ul>
+        <li>Lideré la identificación y corrección de vulnerabilidades del sistema en <strong>C# / ASP.NET</strong>, coordinando un squad de 8-10 personas con equipo remoto en India.</li>
+        <li><strong>95 %</strong> de vulnerabilidades de alto impacto resueltas y <strong>60 %</strong> de bajo impacto, fortaleciendo la seguridad y estabilidad de las aplicaciones.</li>
+        <li>Supervisión de actualizaciones de aplicaciones y frameworks (C#, ASP.NET, jQuery, JavaScript) garantizando continuidad operativa.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-company">Coomeva Medicina Prepagada</div>
+        <div class="job-period">Noviembre 2018 – Septiembre 2022</div>
+      </div>
+      <div class="job-role">Coordinador de Soluciones de Software</div>
+      <ul>
+        <li>Definí y supervisé la <strong>arquitectura de soluciones</strong> alineándolas a los objetivos tecnológicos del grupo, con stack <strong>Java</strong>, <strong>Angular</strong> y <strong>PHP</strong>.</li>
+        <li>Integración técnica de <strong>Salesforce</strong> para gestión de leads y cliente interno, diseñando la interoperabilidad mediante <strong>Web Services</strong> con el core y el Directorio Activo.</li>
+        <li>Modernización del Core: migración de <strong>AS400 a SQL Server</strong>, con integraciones en C#, Java (<strong>JBoss EAP</strong>) y PowerBuilder.</li>
+        <li>Optimización del proceso de pagos en línea en un <strong>90 %</strong>, reduciendo drásticamente los tiempos de espera y mejorando la experiencia del usuario.</li>
+        <li>Liderazgo técnico y gestión integral del <strong>SDLC</strong>, mentorizando engineers y elevando estándares de calidad.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-company">Taylor and Johnson</div>
+        <div class="job-period">Mayo 2016 – Abril 2018</div>
+      </div>
+      <div class="job-role">Desarrollador de Software Senior</div>
+      <ul>
+        <li>Diseño y desarrollo del <strong>Generador Contable</strong> íntegramente en <strong>C# / ASP.NET</strong> + <strong>SQL Server</strong> para clientes financieros, cumpliendo requisitos de robustez del sector.</li>
+        <li>Implementación de estrategia de <strong>batch processing</strong> en C# que mejoró la eficiencia operativa y redujo tiempos de procesamiento.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">Educación</div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-title">Magíster en Gerencia de Tecnologías de Información — <span class="edu-org">Universidad Icesi</span></div>
+        <div class="edu-year">Febrero 2024</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-title">Magíster en Ingeniería de Software — <span class="edu-org">Universidad Javeriana</span></div>
+        <div class="edu-year">Septiembre 2026 (en curso)</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-title">Especialista en Ingeniería de Software — <span class="edu-org">Universidad Javeriana</span></div>
+        <div class="edu-year">Octubre 2022</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-title">Ingeniero de Sistemas — <span class="edu-org">Universidad Cooperativa de Colombia</span></div>
+        <div class="edu-year">Diciembre 2016</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section avoid-break">
+    <div class="section-title">Certificaciones</div>
+    <div class="cert-item">
+      <div class="cert-title">Scrum Master — <span class="cert-org">Certiprof</span></div>
+      <div class="cert-year">Mayo 2020</div>
+    </div>
+    <div class="cert-item">
+      <div class="cert-title">AWS Knowledge: Architecting, Migration Foundations, Cloud Economics — <span class="cert-org">Amazon Web Services</span></div>
+      <div class="cert-year">—</div>
+    </div>
+    <div class="cert-item">
+      <div class="cert-title">Generative AI, LLMs, Image Generation — <span class="cert-org">Google Cloud Skills Boost</span></div>
+      <div class="cert-year">—</div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Competencias Técnicas</div>
+    <div class="skills-grid">
+      <div class="skill-row"><strong>Arquitectura:</strong> Microservicios, Arquitecturas limpias, SOLID, DDD, Modelo C4, API Gateway, integraciones empresariales</div>
+      <div class="skill-row"><strong>Cloud &amp; DevOps:</strong> AWS (cómputo, almacenamiento, modelos fundacionales), Docker, CI/CD con Jenkins y GitHub Actions, IBM API Connect, Gravitee API Manager</div>
+      <div class="skill-row"><strong>Lenguajes:</strong> Java, Python, C#, JavaScript, PHP</div>
+      <div class="skill-row"><strong>Frameworks:</strong> Spring Boot, Spring Security (OAuth2/OIDC), Spring Data JPA, FastAPI, .NET Core, ASP.NET, Hibernate, Angular</div>
+      <div class="skill-row"><strong>Mensajería &amp; Datos:</strong> Apache Kafka, Redis, PostgreSQL, SQL Server, MongoDB, Oracle</div>
+      <div class="skill-row"><strong>IA Generativa:</strong> Diseño de agentes Pro-code y Low-code, LangChain, Spring AI, MCP, A2A Protocol, RAG, AWS Bedrock</div>
+      <div class="skill-row"><strong>Metodologías:</strong> Scrum Master (Certiprof), gestión integral SDLC, mentoría de engineers, comunicación con stakeholders</div>
+      <div class="skill-row"><strong>Idiomas:</strong> Español (nativo), Inglés (B2)</div>
+    </div>
+  </div>
+
+  <!-- SOFT SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Habilidades Blandas</div>
+    <div class="skills-grid">
+      <div class="skill-row"><strong>Liderazgo técnico:</strong> mentoría de engineers, coordinación de squads multidisciplinarios, gestión de stakeholders</div>
+      <div class="skill-row"><strong>Comunicación:</strong> comunicación efectiva con audiencias técnicas y de negocio, docencia universitaria, escucha activa</div>
+      <div class="skill-row"><strong>Resolución de problemas:</strong> pensamiento crítico, análisis sistémico, toma de decisiones bajo restricciones de costo y tiempo</div>
+      <div class="skill-row"><strong>Adaptabilidad:</strong> flexibilidad para cambios de stack y dominio (banca, salud, IA), aprendizaje continuo</div>
+      <div class="skill-row"><strong>Negociación:</strong> acuerdos técnicos y económicos con proveedores cloud, gestión de presupuestos AWS, alineación con áreas de producto y compliance</div>
+      <div class="skill-row"><strong>Trabajo en equipo:</strong> colaboración remota con equipos distribuidos, cultura ágil, trabajo cross-funcional</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -31,7 +31,17 @@ function Cursos(){
                 <h4>{t('courseDescription')}</h4>
                 <p><strong>{t('virtualTraining')}</strong></p>
                 <p>{t('course2Description')}</p>
-                <p><strong><a href="https://platzi.com/p/johnfredyquimbayaorozco/" target="_blank" rel="noopener noreferrer">https://platzi.com/p/johnfredyquimbayaorozco/</a></strong></p>
+                <p>
+                    <strong>
+                        <a
+                            href="https://1drv.ms/f/c/cf940a638c50edc3/IgDD7VCMYwqUIIDP3wcAAAAAAQoXf5S7JXULjL1C5W7RST0?e=48mtyQ"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {t('certificationsFolder')}
+                        </a>
+                    </strong>
+                </p>
 
                 <div style={{display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '20px', justifyContent: 'center'}}>
                     <a href="https://wallet.xertify.co/certificates/D8BBF075A001?r=1" target="_blank" rel="noopener noreferrer">
@@ -89,7 +99,7 @@ function Cursos(){
 
             <div className="course-entry">
                 <h2>{t('courseInformationContac')}</h2>
-                {/* TODO: reemplazar el email universitario por uno profesional propio antes de publicar. */}
+                {/* TODO: reemplazar por email de Google Workspace en próxima iteración. */}
                 <h4>
                     {t('email')}:{' '}
                     <a href="mailto:94041671@u.icesi.edu.co">

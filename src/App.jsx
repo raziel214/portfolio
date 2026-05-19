@@ -12,6 +12,10 @@ import NovatecExperience from "./NovatecExperience";
 import TaylorandJohnson from "./TaylorandJohnson";
 import FreelanceExperience from "./FreelanceExperience";
 import SetiExperience from "./SetiExperience";
+import UccExperience from "./UccExperience";
+import UnicucesExperience from "./UnicucesExperience";
+import Projects from "./Projects";
+import Skills from "./Skills";
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -38,16 +42,28 @@ function App() {
                                 <h1>{t('nameProfile')}</h1>
                                 <p>{t('titleProfile')}</p>
                                 <p>{t('descriptionProfile')}</p>
+                                <a
+                                    className="download-cv-btn"
+                                    href={`${process.env.PUBLIC_URL}/cv.html`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {t('downloadCV')}
+                                </a>
                             </header>
 
                             {/* Otros componentes o contenido */}
                             <ProfileSection />
+                            <Skills />
                             <WorkExperience />
+                            <Projects />
                             <Education />
                             <Cursos />
                         </>
                     } />
                     <Route path="/seti-experience" element={<SetiExperience />} />
+                    <Route path="/ucc-experience" element={<UccExperience />} />
+                    <Route path="/unicuces-experience" element={<UnicucesExperience />} />
                     <Route path="/caja-morelia-experience" element={<CajaMoreliaExperience />} />
                     <Route path="/exsis-digital-experience" element={<ExsisDigitalExperience />} />
                     <Route path="/coomeva-medicina-prepagada" element={<CoomevaExperience />} />

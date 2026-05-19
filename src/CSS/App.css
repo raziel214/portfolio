@@ -72,3 +72,23 @@ body {
   color: #4CAF50;
   border: 2px solid #4CAF50;
 }
+
+.download-cv-btn {
+  display: inline-block;
+  margin-top: 16px;
+  background-color: #1976d2;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95em;
+  letter-spacing: 0.02em;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 2px 6px rgba(25, 118, 210, 0.25);
+}
+
+.download-cv-btn:hover {
+  background-color: #115293;
+  transform: translateY(-1px);
+}
