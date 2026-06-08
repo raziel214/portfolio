@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d9ebe700.css",
+    "main.css": "/portfolio/static/css/main.663e3065.css",
     "main.js": "/portfolio/static/js/main.eb44782b.js",
     "static/js/496.b307acad.chunk.js": "/portfolio/static/js/496.b307acad.chunk.js",
     "static/media/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.png": "/portfolio/static/media/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.be0bb9ce89ec55af385f.be0bb9ce89ec55af385f.png",
@@ -14,12 +14,12 @@
     "static/media/aws-partner-accreditation-technical.png": "/portfolio/static/media/aws-partner-accreditation-technical.d23cc1493cbca8c687af.d23cc1493cbca8c687af.png",
     "static/media/aws-knowledge-architecting.png": "/portfolio/static/media/aws-knowledge-architecting.78c1aef6fac848eb6d10.78c1aef6fac848eb6d10.png",
     "index.html": "/portfolio/index.html",
-    "main.d9ebe700.css.map": "/portfolio/static/css/main.d9ebe700.css.map",
+    "main.663e3065.css.map": "/portfolio/static/css/main.663e3065.css.map",
     "main.eb44782b.js.map": "/portfolio/static/js/main.eb44782b.js.map",
     "496.b307acad.chunk.js.map": "/portfolio/static/js/496.b307acad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9ebe700.css",
+    "static/css/main.663e3065.css",
     "static/js/main.eb44782b.js"
   ]
 }
