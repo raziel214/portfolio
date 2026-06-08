@@ -42,8 +42,21 @@
 }
 
 .project-card--featured {
+    grid-column: 1 / -1;
     border-color: #1976d2;
     box-shadow: 0 4px 14px rgba(25, 118, 210, 0.12);
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+}
+
+.project-card--featured h3 {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 900px) {
+    .project-card--featured .project-summary,
+    .project-card--featured .project-highlights {
+        max-width: 80%;
+    }
 }
 
 .project-badge {
