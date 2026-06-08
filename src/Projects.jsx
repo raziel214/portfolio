@@ -4,10 +4,22 @@ import './CSS/Projects.css';
 
 const projects = [
     {
+        id: 'devsu',
+        repoUrl: 'https://github.com/raziel214/ProyectoDevsu',
+        stack: ['Java 17', 'Spring Boot 3.5', 'Microservices', 'RabbitMQ', 'PostgreSQL', 'Flyway', 'Keycloak (OAuth2/OIDC)', 'Vault', 'Testcontainers', 'Karate E2E', 'Docker Compose'],
+        featured: true,
+    },
+    {
         id: 'cachesystem',
         repoUrl: 'https://github.com/raziel214/cachesystem',
         stack: ['Java 21', 'Spring Boot 3.3', 'Redis 7', 'Hexagonal Architecture', 'Testcontainers', 'Docker', 'GitHub Actions'],
-        featured: true,
+        featured: false,
+    },
+    {
+        id: 'hotelbooking',
+        repoUrl: 'https://github.com/raziel214/HotelBookingSolution',
+        stack: ['.NET Core 8', 'C#', 'DDD', 'SQL Server', 'Entity Framework Core', 'JWT', 'xUnit + Playwright E2E', 'Docker', 'GitHub Actions'],
+        featured: false,
     },
 ];
 

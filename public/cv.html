@@ -58,6 +58,20 @@
     border: 1.5px solid hsl(187, 74%, 32%);
   }
   .toolbar button.secondary:hover { background: hsl(187, 40%, 95%); }
+  .toolbar-link {
+    display: inline-block;
+    background: hsl(270, 70%, 45%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .toolbar-link:hover { background: hsl(270, 70%, 38%); }
 
   /* HEADER */
   .header { margin-bottom: 18px; }
@@ -125,6 +139,7 @@
 
 <div class="toolbar">
   <button type="button" class="secondary" onclick="window.close()">Cerrar</button>
+  <a class="toolbar-link" href="CurriculumJohnfredy.pdf" download>Descargar PDF original</a>
   <button type="button" onclick="window.print()">Guardar como PDF</button>
 </div>
 
