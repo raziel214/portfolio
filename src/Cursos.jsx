@@ -86,16 +86,6 @@ function Cursos(){
                 </p>
             </div>
 
-            <div className="course-entry">
-                <h4>{t('twitter')}</h4>
-                <p>
-                    <strong>
-                        <a href="https://x.com/soulreavers214" target="_blank" rel="noopener noreferrer">
-                            @soulreavers214
-                        </a>
-                    </strong>
-                </p>
-            </div>
 
             <div className="course-entry">
                 <h2>{t('courseInformationContac')}</h2>
