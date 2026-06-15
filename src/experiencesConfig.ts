@@ -1,4 +1,24 @@
-export const experiences = [
+export type ExperienceId =
+    | 'ucc'
+    | 'seti'
+    | 'koralat'
+    | 'exsis'
+    | 'coomeva'
+    | 'cinte'
+    | 'novatec'
+    | 'taylor'
+    | 'unicuces'
+    | 'freelance';
+
+export interface Experience {
+    id: ExperienceId;
+    route: `/${string}`;
+    companyKey: `company_${ExperienceId}`;
+    titleKey: string;
+    descriptionKey: string;
+}
+
+export const experiences: ReadonlyArray<Experience> = [
     {
         id: 'ucc',
         route: '/ucc-experience',
@@ -71,4 +91,6 @@ export const experiences = [
     },
 ];
 
-export const experiencesById = Object.fromEntries(experiences.map((e) => [e.id, e]));
+export const experiencesById: Readonly<Record<ExperienceId, Experience>> = Object.fromEntries(
+    experiences.map((e) => [e.id, e]),
+) as Record<ExperienceId, Experience>;

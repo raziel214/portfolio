@@ -7,7 +7,7 @@ const PARAGRAPH_KEYS = [
     'profileParagraph2',
     'profileParagraph3',
     'profileParagraph4',
-];
+] as const;
 
 function ProfileSection() {
     const { t } = useTranslation();

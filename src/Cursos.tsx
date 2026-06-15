@@ -13,7 +13,13 @@ import googleBadge3 from './images/KJbv0GOIxc4Ze8p7LH1Ke4TeOMBGPqAus29iGiFw5po=.
 const ONEDRIVE_CERTS_URL =
     'https://1drv.ms/f/c/cf940a638c50edc3/IgDD7VCMYwqUIIDP3wcAAAAAAQoXf5S7JXULjL1C5W7RST0?e=48mtyQ';
 
-const badges = [
+interface BadgeEntry {
+    src: string;
+    alt: string;
+    href: string;
+}
+
+const badges: BadgeEntry[] = [
     {
         src: scrumBadge,
         alt: 'Scrum Master certification badge by Certiprof',

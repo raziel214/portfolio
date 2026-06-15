@@ -1,21 +1,30 @@
-import { Component } from 'react';
+import { Component, type ErrorInfo, type ReactNode } from 'react';
 
-class ErrorBoundary extends Component {
-    state = { hasError: false, error: null };
+interface ErrorBoundaryProps {
+    children: ReactNode;
+}
 
-    static getDerivedStateFromError(error) {
+interface ErrorBoundaryState {
+    hasError: boolean;
+    error: Error | null;
+}
+
+class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+    state: ErrorBoundaryState = { hasError: false, error: null };
+
+    static getDerivedStateFromError(error: Error): ErrorBoundaryState {
         return { hasError: true, error };
     }
 
-    componentDidCatch(error, info) {
+    componentDidCatch(error: Error, info: ErrorInfo): void {
         console.error('Unhandled UI error:', error, info);
     }
 
-    handleReload = () => {
+    private handleReload = (): void => {
         window.location.assign('/portfolio/');
     };
 
-    render() {
+    render(): ReactNode {
         if (!this.state.hasError) {
             return this.props.children;
         }
@@ -30,7 +39,9 @@ class ErrorBoundary extends Component {
                 <button type="button" onClick={this.handleReload}>
                     Reload portfolio
                 </button>
-                {import.meta.env.DEV && this.state.error && <pre>{String(this.state.error)}</pre>}
+                {import.meta.env.DEV && this.state.error && (
+                    <pre>{String(this.state.error)}</pre>
+                )}
             </div>
         );
     }

@@ -5,9 +5,12 @@ import './CSS/index.css';
 import App from './App';
 import i18n from './i18n';
 
-const root = createRoot(document.getElementById('root'));
+const container = document.getElementById('root');
+if (!container) {
+    throw new Error('Root container #root not found in index.html');
+}
 
-root.render(
+createRoot(container).render(
     <StrictMode>
         <I18nextProvider i18n={i18n}>
             <Suspense fallback={<div>Loading…</div>}>

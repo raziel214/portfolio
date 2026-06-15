@@ -13,13 +13,13 @@ import ErrorBoundary from './ErrorBoundary';
 import { experiences } from './experiencesConfig';
 
 const ExperienceDetail = lazy(() => import('./ExperienceDetail'));
-const BASE_URL = import.meta.env.BASE_URL;
+const BASE_URL: string = import.meta.env.BASE_URL;
 const BASENAME = BASE_URL.replace(/\/$/, '');
 
 function App() {
     const { t, i18n } = useTranslation();
 
-    const changeLanguage = useCallback((lng) => i18n.changeLanguage(lng), [i18n]);
+    const changeLanguage = useCallback((lng: string) => i18n.changeLanguage(lng), [i18n]);
 
     const Home = (
         <>
@@ -58,7 +58,7 @@ function App() {
                 <div className="App">
                     <nav
                         className="language-btn-container"
-                        aria-label={t('languageToggleAria') || 'Language toggle'}
+                        aria-label={t('languageToggleAria')}
                     >
                         <button
                             type="button"

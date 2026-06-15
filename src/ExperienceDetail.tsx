@@ -1,8 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { experiencesById } from './experiencesConfig';
+import { experiencesById, type ExperienceId } from './experiencesConfig';
 
-function ExperienceDetail({ experienceId }) {
+interface ExperienceDetailProps {
+    experienceId: ExperienceId;
+}
+
+function ExperienceDetail({ experienceId }: ExperienceDetailProps) {
     const { t } = useTranslation();
     const navigate = useNavigate();
 
@@ -13,7 +17,11 @@ function ExperienceDetail({ experienceId }) {
 
     return (
         <article className="experience-detail" id={`${experienceId}-experience`}>
-            <button type="button" onClick={() => navigate('/')} className="language-btn back-btn">
+            <button
+                type="button"
+                onClick={() => navigate('/')}
+                className="language-btn back-btn"
+            >
                 {t('back')}
             </button>
             <h1>{t(experience.companyKey)}</h1>

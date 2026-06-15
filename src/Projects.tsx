@@ -1,7 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import './CSS/Projects.css';
 
-const projects = [
+type ProjectId = 'devsu' | 'devsunet' | 'cachesystem' | 'hotelbooking';
+
+interface ProjectEntry {
+    id: ProjectId;
+    repoUrl: string;
+    stack: string[];
+    featured: boolean;
+}
+
+const projects: ProjectEntry[] = [
     {
         id: 'devsu',
         repoUrl: 'https://github.com/raziel214/ProyectoDevsu',

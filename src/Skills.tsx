@@ -1,7 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import './CSS/Skills.css';
 
-const skillGroups = [
+type SkillGroupId = 'backend' | 'cloud' | 'data' | 'architecture' | 'genai' | 'agile';
+
+interface SkillGroup {
+    id: SkillGroupId;
+    skills: string[];
+}
+
+const skillGroups: SkillGroup[] = [
     {
         id: 'backend',
         skills: [
