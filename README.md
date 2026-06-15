@@ -35,12 +35,12 @@ If you're reviewing this as a recruiter, the [live site](https://raziel214.githu
 
 These are the projects I link from the portfolio and use to demonstrate Senior-level work:
 
-| Project | Stack | What it shows |
-|---|---|---|
-| **[ProyectoDevsu](https://github.com/raziel214/ProyectoDevsu)** ⭐ | Java 17 · Spring Boot 3.5 · RabbitMQ · PostgreSQL · Flyway · Keycloak (OAuth2/OIDC) · Vault · Testcontainers · Karate E2E | Two banking microservices, async events, **database-per-service** + **CQRS-lite**, hexagonal architecture. Devsu technical challenge — feature complete. |
-| **[ProyectoDevsuNet](https://github.com/raziel214/ProyectoDevsuNet)** | .NET 8 · ASP.NET Core · EF Core · same infra | The .NET twin of ProyectoDevsu on the same banking domain — **stack-agnostic polyvalence**, same OpenAPI contracts. |
-| **[cachesystem](https://github.com/raziel214/cachesystem)** | Java 21 · Spring Boot 3.3 · Redis 7 · Hexagonal · Testcontainers · GitHub Actions | Distributed cache REST API with native TTL, **RFC 7807 Problem Details**, multistage Docker, CI pipeline. |
-| **[HotelBookingSolution](https://github.com/raziel214/HotelBookingSolution)** | .NET Core 8 · C# · DDD · SQL Server · EF Core · JWT · xUnit + Playwright E2E | Domain-Driven Design with proper layer separation and end-to-end testing. |
+| Project                                                                       | Stack                                                                                                                     | What it shows                                                                                                                                            |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[ProyectoDevsu](https://github.com/raziel214/ProyectoDevsu)** ⭐            | Java 17 · Spring Boot 3.5 · RabbitMQ · PostgreSQL · Flyway · Keycloak (OAuth2/OIDC) · Vault · Testcontainers · Karate E2E | Two banking microservices, async events, **database-per-service** + **CQRS-lite**, hexagonal architecture. Devsu technical challenge — feature complete. |
+| **[ProyectoDevsuNet](https://github.com/raziel214/ProyectoDevsuNet)**         | .NET 8 · ASP.NET Core · EF Core · same infra                                                                              | The .NET twin of ProyectoDevsu on the same banking domain — **stack-agnostic polyvalence**, same OpenAPI contracts.                                      |
+| **[cachesystem](https://github.com/raziel214/cachesystem)**                   | Java 21 · Spring Boot 3.3 · Redis 7 · Hexagonal · Testcontainers · GitHub Actions                                         | Distributed cache REST API with native TTL, **RFC 7807 Problem Details**, multistage Docker, CI pipeline.                                                |
+| **[HotelBookingSolution](https://github.com/raziel214/HotelBookingSolution)** | .NET Core 8 · C# · DDD · SQL Server · EF Core · JWT · xUnit + Playwright E2E                                              | Domain-Driven Design with proper layer separation and end-to-end testing.                                                                                |
 
 ---
 
@@ -50,17 +50,17 @@ Every choice here would survive a Senior code review.
 
 ### Stack
 
-| Concern | Pick | Why |
-|---|---|---|
-| **Language** | TypeScript 5 with `strict: true` | No implicit `any`, every prop typed, `ExperienceId` is a union literal — refactors are compiler-checked, not test-checked. |
-| **Framework** | React 18 (function components only) | Modern hooks, `React.lazy` + `Suspense` for route-level code splitting. |
-| **Bundler** | Vite 8 | ~150 ms production builds (vs ~30 s with the deprecated CRA). 119 prod packages instead of 1500+. |
-| **Router** | React Router 6 + SPA-fallback `404.html` | Deep routes (`/seti-experience`) are crawlable on GitHub Pages despite being a SPA. |
-| **i18n** | `react-i18next` 13 | Bilingual ES/EN, browser detection + `localStorage` persistence, **zero hardcoded strings** in components. |
-| **Quality gates** | ESLint 9 (flat) + `typescript-eslint`, Prettier 3, EditorConfig | Wired into CI; build is gated behind `tsc --noEmit`. |
-| **Tests** | Vitest 2 + React Testing Library + jsdom | 15 smoke tests over components, ErrorBoundary, i18n — 500 ms. |
-| **CI** | GitHub Actions | Pipeline on every PR: `format:check → lint → typecheck → test → build`. |
-| **Hosting** | GitHub Pages + `gh-pages` | Free, HTTPS, no server to maintain. |
+| Concern           | Pick                                                            | Why                                                                                                                        |
+| ----------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Language**      | TypeScript 5 with `strict: true`                                | No implicit `any`, every prop typed, `ExperienceId` is a union literal — refactors are compiler-checked, not test-checked. |
+| **Framework**     | React 18 (function components only)                             | Modern hooks, `React.lazy` + `Suspense` for route-level code splitting.                                                    |
+| **Bundler**       | Vite 8                                                          | ~150 ms production builds (vs ~30 s with the deprecated CRA). 119 prod packages instead of 1500+.                          |
+| **Router**        | React Router 6 + SPA-fallback `404.html`                        | Deep routes (`/seti-experience`) are crawlable on GitHub Pages despite being a SPA.                                        |
+| **i18n**          | `react-i18next` 13                                              | Bilingual ES/EN, browser detection + `localStorage` persistence, **zero hardcoded strings** in components.                 |
+| **Quality gates** | ESLint 9 (flat) + `typescript-eslint`, Prettier 3, EditorConfig | Wired into CI; build is gated behind `tsc --noEmit`.                                                                       |
+| **Tests**         | Vitest 2 + React Testing Library + jsdom                        | 15 smoke tests over components, ErrorBoundary, i18n — 500 ms.                                                              |
+| **CI**            | GitHub Actions                                                  | Pipeline on every PR: `format:check → lint → typecheck → test → build`.                                                    |
+| **Hosting**       | GitHub Pages + `gh-pages`                                       | Free, HTTPS, no server to maintain.                                                                                        |
 
 ### Architecture decisions worth explaining
 

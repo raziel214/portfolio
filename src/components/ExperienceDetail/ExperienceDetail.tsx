@@ -17,11 +17,7 @@ function ExperienceDetail({ experienceId }: ExperienceDetailProps) {
 
     return (
         <article className="experience-detail" id={`${experienceId}-experience`}>
-            <button
-                type="button"
-                onClick={() => navigate('/')}
-                className="language-btn back-btn"
-            >
+            <button type="button" onClick={() => navigate('/')} className="language-btn back-btn">
                 {t('back')}
             </button>
             <h1>{t(experience.companyKey)}</h1>

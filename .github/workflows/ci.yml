@@ -1,56 +1,56 @@
 name: CI
 
 on:
-  push:
-    branches: [master, main]
-  pull_request:
-    branches: [master, main]
+    push:
+        branches: [master, main]
+    pull_request:
+        branches: [master, main]
 
 permissions:
-  contents: read
+    contents: read
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
 
 jobs:
-  quality:
-    name: Lint · Typecheck · Test · Build
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
+    quality:
+        name: Lint · Typecheck · Test · Build
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
 
-      - name: Set up Node 20
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
+            - name: Set up Node 20
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '20'
+                  cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
+            - name: Install dependencies
+              run: npm ci
 
-      - name: Format check
-        run: npm run format:check
+            - name: Format check
+              run: npm run format:check
 
-      - name: Lint
-        run: npm run lint
+            - name: Lint
+              run: npm run lint
 
-      - name: Type check
-        run: npm run typecheck
+            - name: Type check
+              run: npm run typecheck
 
-      - name: Test
-        run: npm run test:run
+            - name: Test
+              run: npm run test:run
 
-      - name: Build
-        run: npm run build
+            - name: Build
+              run: npm run build
 
-      - name: Upload build artifact
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        uses: actions/upload-artifact@v4
-        with:
-          name: build
-          path: build/
-          retention-days: 7
+            - name: Upload build artifact
+              if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+              uses: actions/upload-artifact@v4
+              with:
+                  name: build
+                  path: build/
+                  retention-days: 7
