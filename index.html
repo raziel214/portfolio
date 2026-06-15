@@ -44,8 +44,121 @@
         />
         <meta name="twitter:image" content="https://raziel214.github.io/portfolio/og-image.png" />
 
+        <!-- Crawler hints -->
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="googlebot" content="index, follow" />
+
+        <!-- Bilingual SEO (single SPA URL, language is client-detected) -->
+        <link rel="alternate" hreflang="es" href="https://raziel214.github.io/portfolio/" />
+        <link rel="alternate" hreflang="en" href="https://raziel214.github.io/portfolio/" />
+        <link rel="alternate" hreflang="x-default" href="https://raziel214.github.io/portfolio/" />
+
         <link rel="apple-touch-icon" href="/logo192.png" />
         <link rel="manifest" href="/manifest.json" />
+
+        <!-- Structured data — schema.org Person -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "@id": "https://raziel214.github.io/portfolio/#person",
+                "name": "John Fredy Quimbaya Orozco",
+                "givenName": "John Fredy",
+                "familyName": "Quimbaya Orozco",
+                "jobTitle": [
+                    "Senior Java Developer",
+                    "Solutions Architect",
+                    "AI Software Architect"
+                ],
+                "description": "Senior Java Developer and Solutions Architect with 9+ years building banking and healthcare solutions using Java, Spring Boot, Python/FastAPI, C#/.NET Core, AWS and Generative AI. Currently a university lecturer in Artificial Intelligence at Universidad Cooperativa de Colombia.",
+                "url": "https://raziel214.github.io/portfolio/",
+                "image": "https://raziel214.github.io/portfolio/og-image.png",
+                "email": "mailto:94041671@u.icesi.edu.co",
+                "telephone": "+57-300-475-6201",
+                "nationality": { "@type": "Country", "name": "Colombia" },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Cali",
+                    "addressRegion": "Valle del Cauca",
+                    "addressCountry": "CO"
+                },
+                "knowsLanguage": [
+                    { "@type": "Language", "name": "Spanish", "alternateName": "es" },
+                    { "@type": "Language", "name": "English", "alternateName": "en" }
+                ],
+                "knowsAbout": [
+                    "Java",
+                    "Spring Boot",
+                    "Spring Security",
+                    "Microservices",
+                    "Hexagonal Architecture",
+                    "Domain-Driven Design",
+                    "Clean Architecture",
+                    "C4 Model",
+                    "C#",
+                    ".NET Core",
+                    "Python",
+                    "FastAPI",
+                    "AWS",
+                    "AWS Bedrock",
+                    "Apache Kafka",
+                    "Redis",
+                    "PostgreSQL",
+                    "Docker",
+                    "GitHub Actions",
+                    "CI/CD",
+                    "Generative AI",
+                    "LangChain",
+                    "Spring AI",
+                    "MCP",
+                    "Pro-code Agents",
+                    "Low-code Agents",
+                    "RAG",
+                    "Banking domain",
+                    "Healthcare domain",
+                    "Scrum"
+                ],
+                "alumniOf": [
+                    {
+                        "@type": "EducationalOrganization",
+                        "name": "Universidad Icesi",
+                        "department": "Master in Information Technology Management"
+                    },
+                    {
+                        "@type": "EducationalOrganization",
+                        "name": "Pontificia Universidad Javeriana",
+                        "department": "Master in Software Engineering · Specialization in Software Engineering"
+                    },
+                    {
+                        "@type": "EducationalOrganization",
+                        "name": "Universidad Cooperativa de Colombia",
+                        "department": "Systems Engineering"
+                    }
+                ],
+                "worksFor": {
+                    "@type": "EducationalOrganization",
+                    "name": "Universidad Cooperativa de Colombia",
+                    "description": "Adjunct lecturer — Artificial Intelligence, Algorithms and Systems Thinking"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/jfqo/",
+                    "https://github.com/raziel214"
+                ]
+            }
+        </script>
+
+        <!-- Structured data — schema.org WebSite -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "@id": "https://raziel214.github.io/portfolio/#website",
+                "url": "https://raziel214.github.io/portfolio/",
+                "name": "John Fredy Quimbaya — Portfolio",
+                "inLanguage": ["es-CO", "en-US"],
+                "author": { "@id": "https://raziel214.github.io/portfolio/#person" }
+            }
+        </script>
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>

@@ -77,3 +77,9 @@ temp/
 .claude/
 REFACTOR_PORTFOLIO.md
 INVENTORY.md
+
+# Search engine ownership verification tokens — must NOT be public.
+# Each owner downloads their own from Google/Bing/Yandex Webmaster.
+public/google*.html
+public/BingSiteAuth.xml
+public/yandex_*.html
