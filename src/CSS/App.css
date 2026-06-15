@@ -2,93 +2,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
 
 .App {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f7f9fc; /* Color de fondo suave */
-  color: #333;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid #e0e6ed;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc; /* Color de fondo suave */
+    color: #333;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #e0e6ed;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .App-header {
-  background-color: #ffffff;
-  color: #2c3e50;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 20px;
+    background-color: #ffffff;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
-  margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-top: 0;
 }
 
 p {
-  margin: 15px 0;
-  font-size: 0.9em;
-  line-height: 1.5em;
-  text-align: justify;
+    margin: 15px 0;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    text-align: justify;
 }
 
 body {
-  background-color: #e6ebf1; /* Un color de fondo general fuera del área principal de la aplicación */
+    background-color: #e6ebf1; /* Un color de fondo general fuera del área principal de la aplicación */
 }
 .profile-pic {
-  width: 150px;  /* O el tamaño que prefieras */
-  height: 150px;
-  border-radius: 50%;  /* Esto hará que la imagen sea redonda */
-  margin-right: 20px;  /* Espacio entre la imagen y el texto */
-  float: left;  /* Alinea la imagen a la izquierda */
+    width: 150px; /* O el tamaño que prefieras */
+    height: 150px;
+    border-radius: 50%; /* Esto hará que la imagen sea redonda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    float: left; /* Alinea la imagen a la izquierda */
 }
 .language-btn-container {
-  display: flex;
-  gap: 10px;
-  margin: 20px 0;
-  justify-content: flex-end;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: flex-end;
 }
 
 .language-btn {
-  background-color: #4c90af;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  outline: none;
+    background-color: #4c90af;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
 }
 
 .language-btn:hover {
-  background-color: white;
-  color: #4CAF50;
-  border: 2px solid #4CAF50;
+    background-color: white;
+    color: #4caf50;
+    border: 2px solid #4caf50;
 }
 
 .download-cv-btn {
-  display: inline-block;
-  margin-top: 16px;
-  background-color: #1976d2;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95em;
-  letter-spacing: 0.02em;
-  transition: background-color 0.15s ease, transform 0.15s ease;
-  box-shadow: 0 2px 6px rgba(25, 118, 210, 0.25);
+    display: inline-block;
+    margin-top: 16px;
+    background-color: #1976d2;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    letter-spacing: 0.02em;
+    transition:
+        background-color 0.15s ease,
+        transform 0.15s ease;
+    box-shadow: 0 2px 6px rgba(25, 118, 210, 0.25);
 }
 
 .download-cv-btn:hover {
-  background-color: #115293;
-  transform: translateY(-1px);
+    background-color: #115293;
+    transform: translateY(-1px);
+}
+
+.route-fallback {
+    padding: 40px 20px;
+    text-align: center;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.experience-detail {
+    padding: 20px;
+}
+
+.experience-detail-body {
+    white-space: pre-line;
+}
+
+.back-btn {
+    margin-bottom: 20px;
+}
+
+.error-boundary {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #e0e6ed;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.error-boundary h1 {
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+
+.error-boundary button {
+    margin-top: 16px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.error-boundary pre {
+    margin-top: 24px;
+    padding: 16px;
+    background: #fef2f2;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 0.85em;
+    white-space: pre-wrap;
 }

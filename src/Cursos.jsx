@@ -10,18 +10,55 @@ import googleBadge1 from './images/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.
 import googleBadge2 from './images/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.be0bb9ce89ec55af385f.png';
 import googleBadge3 from './images/KJbv0GOIxc4Ze8p7LH1Ke4TeOMBGPqAus29iGiFw5po=.465b97041e6cb75f6762.png';
 
-const ONEDRIVE_CERTS_URL = 'https://1drv.ms/f/c/cf940a638c50edc3/IgDD7VCMYwqUIIDP3wcAAAAAAQoXf5S7JXULjL1C5W7RST0?e=48mtyQ';
+const ONEDRIVE_CERTS_URL =
+    'https://1drv.ms/f/c/cf940a638c50edc3/IgDD7VCMYwqUIIDP3wcAAAAAAQoXf5S7JXULjL1C5W7RST0?e=48mtyQ';
 
 const badges = [
-    { src: scrumBadge,      alt: 'Scrum Master certification badge by Certiprof',                    href: 'https://wallet.xertify.co/certificates/D8BBF075A001?r=1' },
-    { src: awsStorage,      alt: 'AWS Educate — Getting Started with Storage badge',                href: 'https://www.credly.com/badges/196bb308-027e-4786-8903-f439ebdf8992/public_url' },
-    { src: awsArchitecting, alt: 'AWS Knowledge: Architecting badge',                                href: 'https://www.credly.com/badges/3f44eeb9-c020-4982-ab34-f4eed45ca47f/public_url' },
-    { src: awsMigration,    alt: 'AWS Knowledge: Migration Foundations badge',                       href: 'https://www.credly.com/badges/aa143d8b-f2d4-4434-b107-890ed5c864e0/linked_in_profile' },
-    { src: awsTechnical,    alt: 'AWS Partner: Technical Accreditation badge',                       href: 'https://www.credly.com/badges/c541e06b-e09f-4b06-a5df-50ba49aa1943/linked_in_profile' },
-    { src: awsEconomics,    alt: 'AWS Partner: Cloud Economics Accreditation badge',                 href: 'https://www.credly.com/badges/a7814bd9-f8cc-4e55-a9cd-7e0e418c72bf/public_url' },
-    { src: googleBadge1,    alt: 'Google Cloud Skills Boost badge — Generative AI',                  href: 'https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9600356' },
-    { src: googleBadge2,    alt: 'Google Cloud Skills Boost badge — Large Language Models',          href: 'https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9599977' },
-    { src: googleBadge3,    alt: 'Google Cloud Skills Boost badge — Image Generation',               href: 'https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9437985' },
+    {
+        src: scrumBadge,
+        alt: 'Scrum Master certification badge by Certiprof',
+        href: 'https://wallet.xertify.co/certificates/D8BBF075A001?r=1',
+    },
+    {
+        src: awsStorage,
+        alt: 'AWS Educate — Getting Started with Storage badge',
+        href: 'https://www.credly.com/badges/196bb308-027e-4786-8903-f439ebdf8992/public_url',
+    },
+    {
+        src: awsArchitecting,
+        alt: 'AWS Knowledge: Architecting badge',
+        href: 'https://www.credly.com/badges/3f44eeb9-c020-4982-ab34-f4eed45ca47f/public_url',
+    },
+    {
+        src: awsMigration,
+        alt: 'AWS Knowledge: Migration Foundations badge',
+        href: 'https://www.credly.com/badges/aa143d8b-f2d4-4434-b107-890ed5c864e0/linked_in_profile',
+    },
+    {
+        src: awsTechnical,
+        alt: 'AWS Partner: Technical Accreditation badge',
+        href: 'https://www.credly.com/badges/c541e06b-e09f-4b06-a5df-50ba49aa1943/linked_in_profile',
+    },
+    {
+        src: awsEconomics,
+        alt: 'AWS Partner: Cloud Economics Accreditation badge',
+        href: 'https://www.credly.com/badges/a7814bd9-f8cc-4e55-a9cd-7e0e418c72bf/public_url',
+    },
+    {
+        src: googleBadge1,
+        alt: 'Google Cloud Skills Boost badge — Generative AI',
+        href: 'https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9600356',
+    },
+    {
+        src: googleBadge2,
+        alt: 'Google Cloud Skills Boost badge — Large Language Models',
+        href: 'https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9599977',
+    },
+    {
+        src: googleBadge3,
+        alt: 'Google Cloud Skills Boost badge — Image Generation',
+        href: 'https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9437985',
+    },
 ];
 
 function Cursos() {
@@ -32,14 +69,18 @@ function Cursos() {
             <h2>{t('certificateTitle')}</h2>
             <div className="course-entry">
                 <h4>{t('scrumMaster')}</h4>
-                <p><strong>{t('certiprof')}</strong></p>
+                <p>
+                    <strong>{t('certiprof')}</strong>
+                </p>
                 <p>{t('cursosScrum')}</p>
             </div>
 
             <h2>{t('courseTitle')}</h2>
             <div className="course-entry">
                 <h4>{t('courseDescription')}</h4>
-                <p><strong>{t('virtualTraining')}</strong></p>
+                <p>
+                    <strong>{t('virtualTraining')}</strong>
+                </p>
                 <p>{t('course2Description')}</p>
                 <p>
                     <strong>
@@ -51,8 +92,18 @@ function Cursos() {
 
                 <div className="cert-badges">
                     {badges.map((badge) => (
-                        <a key={badge.src} href={badge.href} target="_blank" rel="noopener noreferrer">
-                            <img src={badge.src} alt={badge.alt} loading="lazy" className="cert-badge" />
+                        <a
+                            key={badge.src}
+                            href={badge.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src={badge.src}
+                                alt={badge.alt}
+                                loading="lazy"
+                                className="cert-badge"
+                            />
                         </a>
                     ))}
                 </div>
@@ -63,7 +114,11 @@ function Cursos() {
                 <h4>{t('linkedin')}</h4>
                 <p>
                     <strong>
-                        <a href="https://www.linkedin.com/in/jfqo/" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://www.linkedin.com/in/jfqo/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             https://www.linkedin.com/in/jfqo/
                         </a>
                     </strong>
@@ -75,14 +130,11 @@ function Cursos() {
                 {/* TODO: reemplazar por email de Google Workspace en próxima iteración. */}
                 <h4>
                     {t('email')}:{' '}
-                    <a href="mailto:94041671@u.icesi.edu.co">
-                        94041671@u.icesi.edu.co
-                    </a>
+                    <a href="mailto:94041671@u.icesi.edu.co">94041671@u.icesi.edu.co</a>
                 </h4>
                 <p>
                     <strong>
-                        {t('phone')}:{' '}
-                        <a href="tel:+573004756201">+57 300 475 6201</a>
+                        {t('phone')}: <a href="tel:+573004756201">+57 300 475 6201</a>
                     </strong>
                 </p>
             </div>

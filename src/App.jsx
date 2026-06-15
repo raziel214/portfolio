@@ -9,9 +9,12 @@ import Education from './Education';
 import Cursos from './Cursos';
 import Projects from './Projects';
 import Skills from './Skills';
+import ErrorBoundary from './ErrorBoundary';
 import { experiences } from './experiencesConfig';
 
 const ExperienceDetail = lazy(() => import('./ExperienceDetail'));
+const BASE_URL = import.meta.env.BASE_URL;
+const BASENAME = BASE_URL.replace(/\/$/, '');
 
 function App() {
     const { t, i18n } = useTranslation();
@@ -32,7 +35,7 @@ function App() {
                 <p>{t('descriptionProfile')}</p>
                 <a
                     className="download-cv-btn"
-                    href={`${import.meta.env.BASE_URL}/cv.html`}
+                    href={`${BASE_URL}cv.html`}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -50,27 +53,46 @@ function App() {
     );
 
     return (
-        <Router basename={import.meta.env.BASE_URL}>
-            <div className="App">
-                <div className="language-btn-container">
-                    <button className="language-btn" onClick={() => changeLanguage('en')}>English</button>
-                    <button className="language-btn" onClick={() => changeLanguage('es')}>Español</button>
-                </div>
+        <ErrorBoundary>
+            <Router basename={BASENAME}>
+                <div className="App">
+                    <nav
+                        className="language-btn-container"
+                        aria-label={t('languageToggleAria') || 'Language toggle'}
+                    >
+                        <button
+                            type="button"
+                            className="language-btn"
+                            onClick={() => changeLanguage('en')}
+                            aria-pressed={i18n.resolvedLanguage === 'en'}
+                        >
+                            English
+                        </button>
+                        <button
+                            type="button"
+                            className="language-btn"
+                            onClick={() => changeLanguage('es')}
+                            aria-pressed={i18n.resolvedLanguage === 'es'}
+                        >
+                            Español
+                        </button>
+                    </nav>
 
-                <Suspense fallback={<div className="route-fallback">Loading…</div>}>
-                    <Routes>
-                        <Route path="/" element={Home} />
-                        {experiences.map((exp) => (
-                            <Route
-                                key={exp.id}
-                                path={exp.route}
-                                element={<ExperienceDetail experienceId={exp.id} />}
-                            />
-                        ))}
-                    </Routes>
-                </Suspense>
-            </div>
-        </Router>
+                    <Suspense fallback={<div className="route-fallback">Loading…</div>}>
+                        <Routes>
+                            <Route path="/" element={Home} />
+                            {experiences.map((exp) => (
+                                <Route
+                                    key={exp.id}
+                                    path={exp.route}
+                                    element={<ExperienceDetail experienceId={exp.id} />}
+                                />
+                            ))}
+                        </Routes>
+                    </Suspense>
+                </div>
+            </Router>
+        </ErrorBoundary>
     );
 }
 

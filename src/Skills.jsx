@@ -4,7 +4,16 @@ import './CSS/Skills.css';
 const skillGroups = [
     {
         id: 'backend',
-        skills: ['Java 21', 'Spring Boot', 'Spring Security (OAuth2/OIDC)', 'Spring Data JPA', 'Python', 'FastAPI', '.NET Core', 'C#'],
+        skills: [
+            'Java 21',
+            'Spring Boot',
+            'Spring Security (OAuth2/OIDC)',
+            'Spring Data JPA',
+            'Python',
+            'FastAPI',
+            '.NET Core',
+            'C#',
+        ],
     },
     {
         id: 'cloud',
@@ -16,11 +25,25 @@ const skillGroups = [
     },
     {
         id: 'architecture',
-        skills: ['Microservices', 'Hexagonal Architecture', 'DDD', 'Clean Architecture', 'REST APIs', 'C4 Model'],
+        skills: [
+            'Microservices',
+            'Hexagonal Architecture',
+            'DDD',
+            'Clean Architecture',
+            'REST APIs',
+            'C4 Model',
+        ],
     },
     {
         id: 'genai',
-        skills: ['LangChain', 'Spring AI', 'MCP', 'A2A Protocol', 'RAG', 'Pro-code / Low-code Agents'],
+        skills: [
+            'LangChain',
+            'Spring AI',
+            'MCP',
+            'A2A Protocol',
+            'RAG',
+            'Pro-code / Low-code Agents',
+        ],
     },
     {
         id: 'agile',
@@ -42,7 +65,9 @@ function Skills() {
                         <h3>{t(`skills_${group.id}`)}</h3>
                         <ul className="skills-tags">
                             {group.skills.map((skill) => (
-                                <li key={skill} className="skills-tag">{skill}</li>
+                                <li key={skill} className="skills-tag">
+                                    {skill}
+                                </li>
                             ))}
                         </ul>
                     </div>

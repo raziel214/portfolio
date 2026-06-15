@@ -17,19 +17,17 @@ function detectInitialLanguage() {
 
 const resources = {
     en: { translation: translationEN },
-    es: { translation: translationES }
+    es: { translation: translationES },
 };
 
-i18n
-    .use(initReactI18next)
-    .init({
-        resources,
-        lng: detectInitialLanguage(),
-        fallbackLng: 'es',
-        supportedLngs: SUPPORTED,
-        keySeparator: false,
-        interpolation: { escapeValue: false }
-    });
+i18n.use(initReactI18next).init({
+    resources,
+    lng: detectInitialLanguage(),
+    fallbackLng: 'es',
+    supportedLngs: SUPPORTED,
+    keySeparator: false,
+    interpolation: { escapeValue: false },
+});
 
 i18n.on('languageChanged', (lng) => {
     if (typeof window !== 'undefined' && SUPPORTED.includes(lng)) {

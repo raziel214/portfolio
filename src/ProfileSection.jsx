@@ -2,7 +2,12 @@ import { Trans, useTranslation } from 'react-i18next';
 import './CSS/ProfileSection.css';
 
 const TRANS_COMPONENTS = { strong: <strong /> };
-const PARAGRAPH_KEYS = ['profileParagraph1', 'profileParagraph2', 'profileParagraph3', 'profileParagraph4'];
+const PARAGRAPH_KEYS = [
+    'profileParagraph1',
+    'profileParagraph2',
+    'profileParagraph3',
+    'profileParagraph4',
+];
 
 function ProfileSection() {
     const { t } = useTranslation();

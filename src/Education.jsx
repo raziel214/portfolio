@@ -10,24 +10,32 @@ function Education() {
                 <div className="education-column">
                     <div className="education-entry">
                         <h3>{t('education1Title')}</h3>
-                        <p><strong>{t('education1Date')}</strong></p>
+                        <p>
+                            <strong>{t('education1Date')}</strong>
+                        </p>
                     </div>
 
                     <div className="education-entry">
                         <h3>{t('education2Title')}</h3>
-                        <p><strong>{t('education2Date')}</strong></p>
+                        <p>
+                            <strong>{t('education2Date')}</strong>
+                        </p>
                     </div>
                 </div>
 
                 <div className="education-column">
                     <div className="education-entry">
                         <h3>{t('education3Title')}</h3>
-                        <p><strong>{t('education3Date')}</strong></p>
+                        <p>
+                            <strong>{t('education3Date')}</strong>
+                        </p>
                     </div>
 
                     <div className="education-entry">
                         <h3>{t('education4Title')}</h3>
-                        <p><strong>{t('education4Date')}</strong></p>
+                        <p>
+                            <strong>{t('education4Date')}</strong>
+                        </p>
                     </div>
                 </div>
             </div>

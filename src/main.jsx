@@ -14,5 +14,5 @@ root.render(
                 <App />
             </Suspense>
         </I18nextProvider>
-    </StrictMode>
+    </StrictMode>,
 );

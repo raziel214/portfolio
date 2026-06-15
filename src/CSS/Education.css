@@ -23,11 +23,13 @@
     line-height: 1.6;
 }
 
-.education-section strong, .education-section em {
+.education-section strong,
+.education-section em {
     color: #222;
 }
 
-.education-entry, .course-entry {
+.education-entry,
+.course-entry {
     margin-bottom: 20px;
 }
 
@@ -37,7 +39,7 @@
 }
 
 .education-column {
-    width: 48%;  /* Dejar un pequeño espacio entre las dos columnas */
+    width: 48%; /* Dejar un pequeño espacio entre las dos columnas */
 }
 
 @media (max-width: 768px) {
