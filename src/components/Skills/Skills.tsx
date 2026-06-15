@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import './CSS/Skills.css';
+import './Skills.css';
 
 type SkillGroupId = 'backend' | 'cloud' | 'data' | 'architecture' | 'genai' | 'agile';
 

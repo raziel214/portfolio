@@ -39,9 +39,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
                 <button type="button" onClick={this.handleReload}>
                     Reload portfolio
                 </button>
-                {import.meta.env.DEV && this.state.error && (
-                    <pre>{String(this.state.error)}</pre>
-                )}
+                {import.meta.env.DEV && this.state.error && <pre>{String(this.state.error)}</pre>}
             </div>
         );
     }

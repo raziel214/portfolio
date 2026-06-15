@@ -1,18 +1,18 @@
 import { lazy, Suspense, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import './CSS/App.css';
-import profilePic from './images/image003.jpg';
-import ProfileSection from './ProfileSection';
-import WorkExperience from './WorkExperience';
-import Education from './Education';
-import Cursos from './Cursos';
-import Projects from './Projects';
-import Skills from './Skills';
-import ErrorBoundary from './ErrorBoundary';
-import { experiences } from './experiencesConfig';
+import './App.css';
+import profilePic from '../../images/image003.jpg';
+import ProfileSection from '../ProfileSection';
+import WorkExperience from '../WorkExperience';
+import Education from '../Education';
+import Cursos from '../Cursos';
+import Projects from '../Projects';
+import Skills from '../Skills';
+import ErrorBoundary from '../ErrorBoundary';
+import { experiences } from '../../experiencesConfig';
 
-const ExperienceDetail = lazy(() => import('./ExperienceDetail'));
+const ExperienceDetail = lazy(() => import('../ExperienceDetail'));
 const BASE_URL: string = import.meta.env.BASE_URL;
 const BASENAME = BASE_URL.replace(/\/$/, '');
 
@@ -56,10 +56,7 @@ function App() {
         <ErrorBoundary>
             <Router basename={BASENAME}>
                 <div className="App">
-                    <nav
-                        className="language-btn-container"
-                        aria-label={t('languageToggleAria')}
-                    >
+                    <nav className="language-btn-container" aria-label={t('languageToggleAria')}>
                         <button
                             type="button"
                             className="language-btn"

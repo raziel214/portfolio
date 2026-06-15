@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next';
-import './CSS/Cursos.css';
-import scrumBadge from './images/D8BBF075A001.6d9e7cf3ea2af355e053.png';
-import awsStorage from './images/aws-educate-getting-started-with-storage-training-b.png';
-import awsArchitecting from './images/aws-knowledge-architecting.78c1aef6fac848eb6d10.png';
-import awsMigration from './images/aws-knowledge-migration-foundations.7663f659eca82b2eea4d.png';
-import awsTechnical from './images/aws-partner-accreditation-technical.d23cc1493cbca8c687af.png';
-import awsEconomics from './images/aws-partner-cloud-economics-accreditation.e02516075662e938b0be.png';
-import googleBadge1 from './images/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.eaa76e659a771e4f47bf.png';
-import googleBadge2 from './images/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.be0bb9ce89ec55af385f.png';
-import googleBadge3 from './images/KJbv0GOIxc4Ze8p7LH1Ke4TeOMBGPqAus29iGiFw5po=.465b97041e6cb75f6762.png';
+import './Cursos.css';
+import scrumBadge from '../../images/D8BBF075A001.6d9e7cf3ea2af355e053.png';
+import awsStorage from '../../images/aws-educate-getting-started-with-storage-training-b.png';
+import awsArchitecting from '../../images/aws-knowledge-architecting.78c1aef6fac848eb6d10.png';
+import awsMigration from '../../images/aws-knowledge-migration-foundations.7663f659eca82b2eea4d.png';
+import awsTechnical from '../../images/aws-partner-accreditation-technical.d23cc1493cbca8c687af.png';
+import awsEconomics from '../../images/aws-partner-cloud-economics-accreditation.e02516075662e938b0be.png';
+import googleBadge1 from '../../images/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.eaa76e659a771e4f47bf.png';
+import googleBadge2 from '../../images/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.be0bb9ce89ec55af385f.png';
+import googleBadge3 from '../../images/KJbv0GOIxc4Ze8p7LH1Ke4TeOMBGPqAus29iGiFw5po=.465b97041e6cb75f6762.png';
 
 const ONEDRIVE_CERTS_URL =
     'https://1drv.ms/f/c/cf940a638c50edc3/IgDD7VCMYwqUIIDP3wcAAAAAAQoXf5S7JXULjL1C5W7RST0?e=48mtyQ';

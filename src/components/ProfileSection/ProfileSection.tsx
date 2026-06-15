@@ -1,5 +1,5 @@
 import { Trans, useTranslation } from 'react-i18next';
-import './CSS/ProfileSection.css';
+import './ProfileSection.css';
 
 const TRANS_COMPONENTS = { strong: <strong /> };
 const PARAGRAPH_KEYS = [

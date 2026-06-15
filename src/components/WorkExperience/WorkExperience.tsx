@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import './CSS/WorkExperience.css';
-import { experiences } from './experiencesConfig';
+import './WorkExperience.css';
+import { experiences } from '../../experiencesConfig';
 
 function WorkExperience() {
     const { t } = useTranslation();

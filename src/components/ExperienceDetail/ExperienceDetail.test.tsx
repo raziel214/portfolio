@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import { screen } from '@testing-library/react';
-import { renderWithProviders } from './test-utils';
+import { renderWithProviders } from '../../test-utils';
 import ExperienceDetail from './ExperienceDetail';
-import type { ExperienceId } from './experiencesConfig';
+import type { ExperienceId } from '../../experiencesConfig';
 
 describe('ExperienceDetail', () => {
     it('renders the company heading and a back button for a valid id', () => {

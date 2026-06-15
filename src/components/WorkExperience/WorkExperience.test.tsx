@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import { screen } from '@testing-library/react';
-import { renderWithProviders } from './test-utils';
+import { renderWithProviders } from '../../test-utils';
 import WorkExperience from './WorkExperience';
-import { experiences } from './experiencesConfig';
+import { experiences } from '../../experiencesConfig';
 
 describe('WorkExperience', () => {
     it('renders one link per experience defined in the config', () => {

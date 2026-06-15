@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { experiencesById, type ExperienceId } from './experiencesConfig';
+import { experiencesById, type ExperienceId } from '../../experiencesConfig';
 
 interface ExperienceDetailProps {
     experienceId: ExperienceId;

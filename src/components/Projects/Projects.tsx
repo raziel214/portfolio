@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import './CSS/Projects.css';
+import './Projects.css';
 
 type ProjectId = 'devsu' | 'devsunet' | 'cachesystem' | 'hotelbooking';
 

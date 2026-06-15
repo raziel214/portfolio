@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import './CSS/Education.css';
+import './Education.css';
 
 function Education() {
     const { t } = useTranslation();
