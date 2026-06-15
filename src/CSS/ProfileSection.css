@@ -23,6 +23,14 @@
     line-height: 1.6;
 }
 
+.profile-paragraph {
+    white-space: pre-line;
+}
+
+.profile-paragraph:empty {
+    display: none;
+}
+
 .profile-section strong, .profile-section em {
     color: #222;
 }

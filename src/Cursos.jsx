@@ -1,6 +1,5 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './CSS/Cursos.css';
-import {useTranslation} from "react-i18next";
 import scrumBadge from './images/D8BBF075A001.6d9e7cf3ea2af355e053.png';
 import awsStorage from './images/aws-educate-getting-started-with-storage-training-b.png';
 import awsArchitecting from './images/aws-knowledge-architecting.78c1aef6fac848eb6d10.png';
@@ -11,20 +10,31 @@ import googleBadge1 from './images/2meoeAeFaFRp5SS3rOx+rkHovx+_YhhByzW4OIhF5L4=.
 import googleBadge2 from './images/jQMzEedff_eMkW9ts7f6qRjlR8gu4gLQAzyNMXCDRyg=.be0bb9ce89ec55af385f.png';
 import googleBadge3 from './images/KJbv0GOIxc4Ze8p7LH1Ke4TeOMBGPqAus29iGiFw5po=.465b97041e6cb75f6762.png';
 
-function Cursos(){
-    const { t } = useTranslation();
-    return(
-        <div className="education-container">
+const ONEDRIVE_CERTS_URL = 'https://1drv.ms/f/c/cf940a638c50edc3/IgDD7VCMYwqUIIDP3wcAAAAAAQoXf5S7JXULjL1C5W7RST0?e=48mtyQ';
 
+const badges = [
+    { src: scrumBadge,      alt: 'Scrum Master certification badge by Certiprof',                    href: 'https://wallet.xertify.co/certificates/D8BBF075A001?r=1' },
+    { src: awsStorage,      alt: 'AWS Educate — Getting Started with Storage badge',                href: 'https://www.credly.com/badges/196bb308-027e-4786-8903-f439ebdf8992/public_url' },
+    { src: awsArchitecting, alt: 'AWS Knowledge: Architecting badge',                                href: 'https://www.credly.com/badges/3f44eeb9-c020-4982-ab34-f4eed45ca47f/public_url' },
+    { src: awsMigration,    alt: 'AWS Knowledge: Migration Foundations badge',                       href: 'https://www.credly.com/badges/aa143d8b-f2d4-4434-b107-890ed5c864e0/linked_in_profile' },
+    { src: awsTechnical,    alt: 'AWS Partner: Technical Accreditation badge',                       href: 'https://www.credly.com/badges/c541e06b-e09f-4b06-a5df-50ba49aa1943/linked_in_profile' },
+    { src: awsEconomics,    alt: 'AWS Partner: Cloud Economics Accreditation badge',                 href: 'https://www.credly.com/badges/a7814bd9-f8cc-4e55-a9cd-7e0e418c72bf/public_url' },
+    { src: googleBadge1,    alt: 'Google Cloud Skills Boost badge — Generative AI',                  href: 'https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9600356' },
+    { src: googleBadge2,    alt: 'Google Cloud Skills Boost badge — Large Language Models',          href: 'https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9599977' },
+    { src: googleBadge3,    alt: 'Google Cloud Skills Boost badge — Image Generation',               href: 'https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9437985' },
+];
+
+function Cursos() {
+    const { t } = useTranslation();
+
+    return (
+        <div className="education-container">
             <h2>{t('certificateTitle')}</h2>
             <div className="course-entry">
                 <h4>{t('scrumMaster')}</h4>
                 <p><strong>{t('certiprof')}</strong></p>
                 <p>{t('cursosScrum')}</p>
-
             </div>
-
-
 
             <h2>{t('courseTitle')}</h2>
             <div className="course-entry">
@@ -33,44 +43,18 @@ function Cursos(){
                 <p>{t('course2Description')}</p>
                 <p>
                     <strong>
-                        <a
-                            href="https://1drv.ms/f/c/cf940a638c50edc3/IgDD7VCMYwqUIIDP3wcAAAAAAQoXf5S7JXULjL1C5W7RST0?e=48mtyQ"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <a href={ONEDRIVE_CERTS_URL} target="_blank" rel="noopener noreferrer">
                             {t('certificationsFolder')}
                         </a>
                     </strong>
                 </p>
 
-                <div style={{display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '20px', justifyContent: 'center'}}>
-                    <a href="https://wallet.xertify.co/certificates/D8BBF075A001?r=1" target="_blank" rel="noopener noreferrer">
-                        <img src={scrumBadge} alt="Scrum Master certification badge by Certiprof" loading="lazy" style={{width: '150px', height: 'auto'}} />
-                    </a>
-                    <a href="https://www.credly.com/badges/196bb308-027e-4786-8903-f439ebdf8992/public_url" target="_blank" rel="noopener noreferrer">
-                        <img src={awsStorage} alt="AWS Educate — Getting Started with Storage badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
-                    </a>
-                    <a href="https://www.credly.com/badges/3f44eeb9-c020-4982-ab34-f4eed45ca47f/public_url" target="_blank" rel="noopener noreferrer">
-                        <img src={awsArchitecting} alt="AWS Knowledge: Architecting badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
-                    </a>
-                    <a href="https://www.credly.com/badges/aa143d8b-f2d4-4434-b107-890ed5c864e0/linked_in_profile" target="_blank" rel="noopener noreferrer">
-                        <img src={awsMigration} alt="AWS Knowledge: Migration Foundations badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
-                    </a>
-                    <a href="https://www.credly.com/badges/c541e06b-e09f-4b06-a5df-50ba49aa1943/linked_in_profile" target="_blank" rel="noopener noreferrer">
-                        <img src={awsTechnical} alt="AWS Partner: Technical Accreditation badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
-                    </a>
-                    <a href="https://www.credly.com/badges/a7814bd9-f8cc-4e55-a9cd-7e0e418c72bf/public_url" target="_blank" rel="noopener noreferrer">
-                        <img src={awsEconomics} alt="AWS Partner: Cloud Economics Accreditation badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
-                    </a>
-                    <a href="https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9600356" target="_blank" rel="noopener noreferrer">
-                        <img src={googleBadge1} alt="Google Cloud Skills Boost badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
-                    </a>
-                    <a href="https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9599977" target="_blank" rel="noopener noreferrer">
-                        <img src={googleBadge2} alt="Google Cloud Skills Boost badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
-                    </a>
-                    <a href="https://www.skills.google/public_profiles/c51c2d23-b0ea-472f-85a6-127cad884d95/badges/9437985" target="_blank" rel="noopener noreferrer">
-                        <img src={googleBadge3} alt="Google Cloud Skills Boost badge" loading="lazy" style={{width: '150px', height: 'auto'}} />
-                    </a>
+                <div className="cert-badges">
+                    {badges.map((badge) => (
+                        <a key={badge.src} href={badge.href} target="_blank" rel="noopener noreferrer">
+                            <img src={badge.src} alt={badge.alt} loading="lazy" className="cert-badge" />
+                        </a>
+                    ))}
                 </div>
             </div>
 
@@ -85,7 +69,6 @@ function Cursos(){
                     </strong>
                 </p>
             </div>
-
 
             <div className="course-entry">
                 <h2>{t('courseInformationContac')}</h2>
@@ -103,14 +86,8 @@ function Cursos(){
                     </strong>
                 </p>
             </div>
-
-
         </div>
-
-
-
     );
-
 }
 
 export default Cursos;

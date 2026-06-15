@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './CSS/Projects.css';
 
@@ -8,6 +7,12 @@ const projects = [
         repoUrl: 'https://github.com/raziel214/ProyectoDevsu',
         stack: ['Java 17', 'Spring Boot 3.5', 'Microservices', 'RabbitMQ', 'PostgreSQL', 'Flyway', 'Keycloak (OAuth2/OIDC)', 'Vault', 'Testcontainers', 'Karate E2E', 'Docker Compose'],
         featured: true,
+    },
+    {
+        id: 'devsunet',
+        repoUrl: 'https://github.com/raziel214/ProyectoDevsuNet',
+        stack: ['.NET 8', 'C#', 'ASP.NET Core', 'Entity Framework Core', 'Microservices', 'RabbitMQ', 'PostgreSQL', 'Keycloak (OIDC/JWT)', 'Vault', 'Testcontainers for .NET', 'Docker Compose'],
+        featured: false,
     },
     {
         id: 'cachesystem',
