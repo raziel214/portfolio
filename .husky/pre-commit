@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+# Husky 9 pre-commit hook.
+# Some GUI git clients (GitHub Desktop on Windows, GitKraken, etc.)
+# spawn hooks with a minimal PATH that doesn't include Node.js. Try
+# the usual installation locations before bailing.
+
+if [ -d "/c/Program Files/nodejs" ]; then
+    PATH="/c/Program Files/nodejs:$PATH"
+fi
+if [ -d "/c/nvm4w/nodejs" ]; then
+    PATH="/c/nvm4w/nodejs:$PATH"
+fi
+if [ -d "$HOME/AppData/Local/nvm" ]; then
+    PATH="$HOME/AppData/Local/nvm:$PATH"
+fi
+if [ -d "$HOME/AppData/Roaming/npm" ]; then
+    PATH="$HOME/AppData/Roaming/npm:$PATH"
+fi
+export PATH
+
+if ! command -v npx >/dev/null 2>&1; then
+    printf '\n[husky] npx not on PATH — skipping pre-commit checks.\n'
+    printf '[husky] Tip: run "git commit" from a terminal where Node is on PATH,\n'
+    printf '[husky] or add Node.js to the system PATH so GUI clients see it.\n'
+    exit 0
+fi
+
+npx lint-staged
