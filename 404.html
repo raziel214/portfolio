@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>John Fredy Quimbaya — Portfolio</title>
+        <meta name="robots" content="noindex" />
+        <script>
+            // SPA redirect for GitHub Pages.
+            // Captures any path under /portfolio/<anything> and rewrites it to
+            //   /portfolio/?p=<original-path>
+            // The single-page app reads ?p= on boot and restores the URL.
+            // Pattern adapted from https://github.com/rafgraph/spa-github-pages
+            (function () {
+                var segmentCount = 1; // matches the "/portfolio" base prefix
+                var l = window.location;
+                l.replace(
+                    l.protocol +
+                        '//' +
+                        l.hostname +
+                        (l.port ? ':' + l.port : '') +
+                        l.pathname
+                            .split('/')
+                            .slice(0, 1 + segmentCount)
+                            .join('/') +
+                        '/?p=/' +
+                        l.pathname
+                            .slice(1)
+                            .split('/')
+                            .slice(segmentCount)
+                            .join('/')
+                            .replace(/&/g, '~and~') +
+                        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+                        l.hash,
+                );
+            })();
+        </script>
+    </head>
+    <body></body>
+</html>
