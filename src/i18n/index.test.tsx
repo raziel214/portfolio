@@ -12,13 +12,13 @@ describe('i18n', () => {
             await i18n.changeLanguage('es');
         });
         const titleEs = i18n.t('titleProfile');
-        expect(titleEs).toMatch(/Senior Java Developer/);
+        expect(titleEs).toMatch(/Solutions Architect/);
 
         await act(async () => {
             await i18n.changeLanguage('en');
         });
         const titleEn = i18n.t('titleProfile');
-        expect(titleEn).toMatch(/Senior Java Developer/);
+        expect(titleEn).toMatch(/Solutions Architect/);
     });
 
     it('persists the chosen language in localStorage', async () => {

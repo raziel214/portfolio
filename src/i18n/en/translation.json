@@ -1,7 +1,7 @@
 {
   "profileAltText": "John Fredy Quimbaya Orozco",
   "nameProfile": "John Fredy Quimbaya Orozco",
-  "titleProfile": "Senior Java Developer · Solutions Architect · AI Software Architect",
+  "titleProfile": "Senior Software Developer · Tech Lead · Solutions Architect",
   "descriptionProfile": "9+ years building banking and healthcare solutions with Java + Spring Boot, C# + .NET Core, Python + FastAPI, AWS and Generative AI. Microservices design under C4 Model. University lecturer in AI at UCC. Cali, Colombia.",
   "profileProfessional": "Professional Profile",
   "profileRole": "IT Manager, Solutions Architect, Technical Lead and Senior Developer",
@@ -81,7 +81,7 @@
   "unicucesExperienceTitle": "Lecturer — Algorithms and Structured Programming",
   "unicucesExperienceDescription": "Lecturer in computer systems focused on algorithms and structured programming. Topics covered variable and data type assignment, control structures, and the definition of functions and methods using C++ and PSeInt as a pseudocode tool.\n\n• Variable assignment and data types.\n• Control structures: if/else, switch, for, while, do-while.\n• Classes, functions and methods.",
   "certificationsFolder": "View all my certifications (OneDrive)",
-  "downloadCV": "View CV / Save as PDF",
+  "downloadCV": "Download CV (PDF)",
   "languageToggleAria": "Change language",
   "skillsTitle": "Tech Stack",
   "skillsIntro": "Technologies I use today on banking, healthcare and GenAI projects. 9+ years working across these areas.",
