@@ -21,8 +21,7 @@ function App() {
 
     const changeLanguage = useCallback((lng: string) => i18n.changeLanguage(lng), [i18n]);
 
-    const cvPdfFile =
-        i18n.resolvedLanguage === 'en' ? 'CurriculumJohnfredy-EN.pdf' : 'CurriculumJohnfredy.pdf';
+    const cvHtmlFile = i18n.resolvedLanguage === 'en' ? 'cv-en.html' : 'cv.html';
 
     const Home = (
         <>
@@ -36,7 +35,12 @@ function App() {
                 <h1>{t('nameProfile')}</h1>
                 <p>{t('titleProfile')}</p>
                 <p>{t('descriptionProfile')}</p>
-                <a className="download-cv-btn" href={`${BASE_URL}${cvPdfFile}`} download>
+                <a
+                    className="download-cv-btn"
+                    href={`${BASE_URL}${cvHtmlFile}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {t('downloadCV')}
                 </a>
             </header>
