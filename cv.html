@@ -72,6 +72,12 @@
     transition: background 0.15s ease;
   }
   .toolbar-link:hover { background: hsl(270, 70%, 38%); }
+  .toolbar-link.secondary {
+    background: transparent;
+    color: hsl(187, 74%, 32%);
+    border: 1.5px solid hsl(187, 74%, 32%);
+  }
+  .toolbar-link.secondary:hover { background: hsl(187, 40%, 95%); }
 
   /* HEADER */
   .header { margin-bottom: 18px; }
@@ -139,6 +145,7 @@
 
 <div class="toolbar">
   <button type="button" class="secondary" onclick="window.close()">Cerrar</button>
+  <a class="toolbar-link secondary" href="cv-en.html">English</a>
   <a class="toolbar-link" href="CurriculumJohnfredy.pdf" download>Descargar PDF original</a>
   <button type="button" onclick="window.print()">Guardar como PDF</button>
 </div>
@@ -148,7 +155,7 @@
   <!-- HEADER -->
   <div class="header avoid-break">
     <h1>John Fredy Quimbaya Orozco</h1>
-    <div class="header-subtitle">Architect Sr · Software Architect · Solutions Architect</div>
+    <div class="header-subtitle">Senior Java Developer · Solutions Architect · AI Software Architect</div>
     <div class="header-gradient"></div>
     <div class="contact-row">
       <a href="tel:+573004756201">+57 300 475 6201</a>
