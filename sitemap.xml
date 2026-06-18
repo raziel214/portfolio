@@ -64,5 +64,14 @@
         <loc>https://raziel214.github.io/portfolio/cv.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://raziel214.github.io/portfolio/cv.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://raziel214.github.io/portfolio/cv-en.html" />
+    </url>
+    <url>
+        <loc>https://raziel214.github.io/portfolio/cv-en.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://raziel214.github.io/portfolio/cv.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://raziel214.github.io/portfolio/cv-en.html" />
     </url>
 </urlset>
