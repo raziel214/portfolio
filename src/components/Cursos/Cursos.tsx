@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import './Cursos.css';
-import scrumBadge from '../../images/D8BBF075A001.6d9e7cf3ea2af355e053.png';
+import maestriaBadge from '../../images/D8BBF075A003-openbadge3.png';
+import especializacionBadge from '../../images/D8BBF075A001.6d9e7cf3ea2af355e053.png';
 import awsStorage from '../../images/aws-educate-getting-started-with-storage-training-b.png';
 import awsArchitecting from '../../images/aws-knowledge-architecting.78c1aef6fac848eb6d10.png';
 import awsMigration from '../../images/aws-knowledge-migration-foundations.7663f659eca82b2eea4d.png';
@@ -21,8 +22,13 @@ interface BadgeEntry {
 
 const badges: BadgeEntry[] = [
     {
-        src: scrumBadge,
-        alt: 'Scrum Master certification badge by Certiprof',
+        src: maestriaBadge,
+        alt: 'Master of Software Engineering badge — Pontificia Universidad Javeriana Cali',
+        href: 'https://wallet.xertify.co/certificates/D8BBF075A003',
+    },
+    {
+        src: especializacionBadge,
+        alt: 'Software Engineering Specialist badge — Pontificia Universidad Javeriana Cali',
         href: 'https://wallet.xertify.co/certificates/D8BBF075A001?r=1',
     },
     {
