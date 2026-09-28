@@ -51,7 +51,7 @@
   "koralatExperienceTitle": "Solutions Architect",
   "koralatExperienceDescription": "I led the strategy to evolve the company's Core towards a modern Microservices architecture, working closely with the provider Cobis Topaz to ensure a smooth migration. I led the negotiation of technical and budgetary agreements, achieving an optimal cost-benefit balance in the adoption of AWS cloud services. I actively participated in vendor selection, running technical feasibility assessments to ensure that solutions aligned with the scalability and high availability required by the business.\n\nI drove the adoption of clean, decoupled architectures on the technology stack (.NET Core), enabling container deployment and cloud orchestration. I designed and implemented continuous integration and deployment (CI/CD) strategies using Jenkins and AWS managed services, automating processes that significantly reduced \"Time-to-Market\". I also led the migration from IBM API Connect to Gravitee API Manager to optimize traffic management. I coordinated multidisciplinary teams (internal and outsourcing) under agile methodologies, ensuring that the proposed architecture met the organization's security and operational efficiency standards.\n\n• Implementation of the architecture vision for the banking Core.\n• Promotion of an agile development culture, with a notable increase in team productivity and software quality.\n• Leadership in the adoption of strategies for migrations and integrations with the Cobis Topaz core.",
   "virtualTraining": "Virtual Training",
-  "phone": "Phone",
+  "whatsapp": "WhatsApp",
   "email": "Email",
   "back": "← Back",
   "linkedin": "Linkedin",

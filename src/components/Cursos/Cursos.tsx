@@ -146,7 +146,14 @@ function Cursos() {
                 </h4>
                 <p>
                     <strong>
-                        {t('phone')}: <a href="tel:+573004756201">+57 300 475 6201</a>
+                        {t('whatsapp')}:{' '}
+                        <a
+                            href="https://wa.me/573004756201"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            +57 300 475 6201
+                        </a>
                     </strong>
                 </p>
             </div>
