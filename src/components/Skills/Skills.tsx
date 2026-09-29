@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import './Skills.css';
 
-type SkillGroupId = 'backend' | 'cloud' | 'data' | 'architecture' | 'genai' | 'agile';
+type SkillGroupId = 'architecture' | 'backend' | 'cloud' | 'data' | 'genai' | 'governance';
 
 interface SkillGroup {
     id: SkillGroupId;
@@ -10,51 +10,73 @@ interface SkillGroup {
 
 const skillGroups: SkillGroup[] = [
     {
+        id: 'architecture',
+        skills: [
+            'Solution Architecture',
+            'Enterprise Architecture',
+            'Modernización de Core Bancario',
+            'Microservicios',
+            'DDD',
+            'CQRS',
+            'Modelo C4',
+            'Arquitectura Hexagonal',
+            'Clean Architecture',
+        ],
+    },
+    {
         id: 'backend',
         skills: [
             'Java 21',
             'Spring Boot',
             'Spring Security (OAuth2/OIDC)',
             'Spring Data JPA',
-            'Python',
-            'FastAPI',
             '.NET Core',
             'C#',
+            'ASP.NET',
+            'Python',
+            'FastAPI',
         ],
     },
     {
         id: 'cloud',
-        skills: ['AWS', 'AWS Bedrock', 'Docker', 'Jenkins', 'GitHub Actions', 'CI/CD'],
+        skills: [
+            'AWS',
+            'Amazon S3',
+            'Docker',
+            'CI/CD',
+            'Jenkins',
+            'Gitea',
+            'GitHub Actions',
+            'AWS Bedrock',
+        ],
     },
     {
         id: 'data',
-        skills: ['Apache Kafka', 'Redis', 'PostgreSQL', 'SQL Server', 'MongoDB', 'Oracle'],
-    },
-    {
-        id: 'architecture',
-        skills: [
-            'Microservices',
-            'Hexagonal Architecture',
-            'DDD',
-            'Clean Architecture',
-            'REST APIs',
-            'C4 Model',
-        ],
+        skills: ['SQL Server', 'Oracle', 'PostgreSQL', 'Apache Kafka', 'Redis', 'MongoDB', 'AS400'],
     },
     {
         id: 'genai',
         skills: [
-            'LangChain',
+            'LLMs',
+            'LangGraph',
             'Spring AI',
             'MCP',
-            'A2A Protocol',
             'RAG',
-            'Pro-code / Low-code Agents',
+            'Agentes Pro-code / Low-code',
+            'n8n',
         ],
     },
     {
-        id: 'agile',
-        skills: ['Scrum Master (Certiprof)', 'Kanban', 'Agile coaching'],
+        id: 'governance',
+        skills: [
+            'API Management (Gravitee / IBM API Connect)',
+            'Gobernanza Tecnológica',
+            'Presupuestos de TI',
+            'SLAs',
+            'Negociación con Stakeholders',
+            'Liderazgo Técnico',
+            'Scrum',
+        ],
     },
 ];
 

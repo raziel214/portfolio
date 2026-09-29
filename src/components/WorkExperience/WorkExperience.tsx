@@ -12,7 +12,11 @@ function WorkExperience() {
             <div className="work-experience-container">
                 {experiences.map((exp) => (
                     <div key={exp.id} className="experience-column">
-                        <Link to={exp.route}>{t(exp.companyKey)}</Link>
+                        <Link to={exp.route} className="experience-company">
+                            {t(exp.companyKey)}
+                        </Link>
+                        <p className="experience-role">{t(exp.titleKey)}</p>
+                        <p className="experience-period">{t(exp.periodKey)}</p>
                     </div>
                 ))}
             </div>

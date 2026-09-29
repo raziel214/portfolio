@@ -12,13 +12,15 @@ describe('i18n', () => {
             await i18n.changeLanguage('es');
         });
         const titleEs = i18n.t('titleProfile');
-        expect(titleEs).toMatch(/Solutions Architect/);
+        expect(titleEs).toMatch(/Arquitecto de Soluciones/);
 
         await act(async () => {
             await i18n.changeLanguage('en');
         });
         const titleEn = i18n.t('titleProfile');
         expect(titleEn).toMatch(/Solutions Architect/);
+
+        expect(titleEn).not.toBe(titleEs);
     });
 
     it('persists the chosen language in localStorage', async () => {

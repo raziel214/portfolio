@@ -142,6 +142,10 @@ function Cursos() {
                 {/* TODO: reemplazar por email de Google Workspace en próxima iteración. */}
                 <h4>
                     {t('email')}:{' '}
+                    <a href="mailto:soulreavers214@gmail.com">soulreavers214@gmail.com</a>
+                </h4>
+                <h4>
+                    {t('emailAlt')}:{' '}
                     <a href="mailto:94041671@u.icesi.edu.co">94041671@u.icesi.edu.co</a>
                 </h4>
                 <p>

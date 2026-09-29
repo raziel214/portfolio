@@ -24,6 +24,7 @@ function ExperienceDetail({ experienceId }: ExperienceDetailProps) {
             <p>
                 <strong>{t(experience.titleKey)}</strong>
             </p>
+            <p className="experience-detail-period">{t(experience.periodKey)}</p>
             <p className="experience-detail-body">{t(experience.descriptionKey)}</p>
         </article>
     );

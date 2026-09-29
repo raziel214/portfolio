@@ -106,6 +106,12 @@ body {
     padding: 20px;
 }
 
+.experience-detail-period {
+    color: #6b6b6b;
+    font-size: 0.9em;
+    margin-top: -8px;
+}
+
 .experience-detail-body {
     white-space: pre-line;
 }
